@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Counter from "./components/Counter";
+import Main from "./sections/main/Index";
 
 class App extends Component {
   render() {
     return (
-      <Counter />
+      <Main />
     );
   }
 }
