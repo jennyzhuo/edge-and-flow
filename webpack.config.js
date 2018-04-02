@@ -10,10 +10,22 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.scss/,
+      //   loader: ExtractTextPlugin.extract(["css-loader", "sass-loader"])
+      // },
       {
-        test: /\.scss/,
-        loader: ExtractTextPlugin.extract(["css-loader", "sass-loader"])
+        test: /\.scss$/, // files ending with .scss
+        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        })),
       },
+      // {
+      //   test  : /\.scss$/,
+      //   loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' }),
+      //   include: path.join(__dirname, 'src')
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,

@@ -11,8 +11,10 @@ class Main extends Component {
   render() {
 
     return (
-      <div className="controls">
-        this works
+      <div className="test">
+        <div>
+          main main
+        </div>
       </div>
     );
   }
