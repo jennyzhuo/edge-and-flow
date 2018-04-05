@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Home from "./sections/home/Index";
-import splatter1 from "../assets/images/splatter1.svg"
-import splatter2 from "../assets/images/splatter2.svg"
-import splatter3 from "../assets/images/splatter3.svg"
+import splatter1 from "../assets/images/splatter1.svg";
+import splatter2 from "../assets/images/splatter2.svg";
+import splatter3 from "../assets/images/splatter3.svg";
 
 class App extends Component {
   render() {
