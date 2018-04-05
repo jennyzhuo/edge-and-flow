@@ -87,3 +87,7 @@ body {
   color: pink;
   background-color: gray;
   font-size: 20px; }
+
+.backdrop-container {
+  background-color: green;
+}

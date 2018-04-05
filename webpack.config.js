@@ -21,11 +21,14 @@ module.exports = {
           use: ['css-loader', 'sass-loader'],
         })),
       },
-      // {
-      //   test  : /\.scss$/,
-      //   loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' }),
-      //   include: path.join(__dirname, 'src')
-      // },
+      {
+        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'url-loader'
+          },
+        ]
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
