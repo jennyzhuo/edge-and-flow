@@ -1,8 +1,10 @@
 .projects {
+	position: fixed;
+	top: 60%;
+}
 
-	.menu {
-		position: fixed;
-		top: 80%;
-	}
-
+.home {
+  	flex: wrap;
+    position: relative;
+    top: 40%;
 }

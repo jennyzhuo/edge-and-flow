@@ -17,10 +17,10 @@ class App extends Component {
         <img src={splatter2} alt="backdrop"/>
         <img src={splatter3} alt="backdrop"/>*/}
         <div className="d-flex justify-content-center">
-          <div className="col-6">
+          <div>
             <Home />
           </div>
-          <div className="col-6">
+          <div>
             <Projects />
           </div>
         </div>
