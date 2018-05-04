@@ -12,7 +12,7 @@ class Dynamo extends Component {
 
     return (
       <div className="controls">
-        this works
+        this d
       </div>
     );
   }

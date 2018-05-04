@@ -3,7 +3,12 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: ["./src/Index.js", "./src/styles/main.scss"],
+  entry: [
+    'webpack-dev-server/client?http://localhost:9000',
+    'webpack/hot/only-dev-server',
+    "./src/Index.js", 
+    "./src/styles/main.scss"
+  ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./public/dist")
@@ -29,20 +34,25 @@ module.exports = {
           },
         ]
       },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loaders: "eslint-loader",
+      // },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loaders: "react-hot-loader",      
+      // },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: "eslint-loader",
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: "babel-loader",
+        loaders:"babel-loader",
         options: {
           presets: ["react", "stage-0", "es2015"],
-          plugins: ["transform-class-properties", "transform-decorators-legacy"]
+          plugins: ["transform-class-properties", "transform-decorators-legacy", "react-hot-loader/babel"]
         }
-      }
+      },
     ]
   },
   devServer: {
@@ -50,6 +60,7 @@ module.exports = {
     watchContentBase: true
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin("bundle.css"),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production")
