@@ -11,8 +11,10 @@ class Projects extends Component {
   render() {
 
     return (
-      <div className="controls">
-        this works
+      <div className="projects">
+        <div className="menu">
+        	<h3>+ RECENT WORKS</h3>
+        </div>
       </div>
     );
   }
