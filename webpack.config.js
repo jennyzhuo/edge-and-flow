@@ -19,12 +19,28 @@ module.exports = {
       //   test: /\.scss/,
       //   loader: ExtractTextPlugin.extract(["css-loader", "sass-loader"])
       // },
+      // {
+      //   test: /\.scss$/, // files ending with .scss
+      //   use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: ['css-loader', 'sass-loader'],
+      //   })),
+      // },
+      
       {
-        test: /\.scss$/, // files ending with .scss
-        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader'],
-        })),
+          test: /\.scss$/,
+          include: /(src|assets)/,
+          use: [
+              {
+                  loader: 'style-loader'
+              },
+              {
+                  loader: 'css-loader?sourceMap'
+              },
+              {
+                  loader: 'sass-loader?sourceMap'
+              }
+          ]
       },
       {
         test: /\.(pdf|jpg|png|gif|svg|ico)$/,
@@ -61,7 +77,7 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin("bundle.css"),
+    // new ExtractTextPlugin("bundle.css"),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production")
     }),
