@@ -15,18 +15,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.scss/,
-      //   loader: ExtractTextPlugin.extract(["css-loader", "sass-loader"])
-      // },
-      // {
-      //   test: /\.scss$/, // files ending with .scss
-      //   use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-      //     fallback: 'style-loader',
-      //     use: ['css-loader', 'sass-loader'],
-      //   })),
-      // },
-      
       {
           test: /\.scss$/,
           include: /(src|assets)/,
@@ -50,16 +38,6 @@ module.exports = {
           },
         ]
       },
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   loaders: "eslint-loader",
-      // },
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   loaders: "react-hot-loader",      
-      // },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -77,7 +55,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    // new ExtractTextPlugin("bundle.css"),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production")
     }),
