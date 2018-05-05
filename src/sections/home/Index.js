@@ -25,6 +25,14 @@ class Home extends Component {
 	         	from the cross-pollination of each other's enthusiasm.
 	         </p>
 	      </div>
+	      <div className="menu p-3">
+	      	<div className="btn-group btn-group-sm" role="group">
+			    <button type="button active" className="btn btn-secondary px-3">HOME</button>
+			    <button type="button" className="btn btn-secondary px-3">PERSONAL</button>
+			    <button type="button" className="btn btn-secondary px-3">INTERESTS</button>
+			    <button type="button" className="btn btn-secondary px-3">CONNECT</button>
+			  </div>
+	      </div>
       </div>
     );
   }

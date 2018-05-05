@@ -1,10 +1,38 @@
 .projects {
 	position: fixed;
-	top: 60%;
+	top: 55%;
 }
 
 .home {
   	flex: wrap;
     position: relative;
-    top: 40%;
+    top: 35%;
+
+
+   .menu {
+   		.btn {
+   			border-radius: 0px;
+   			border-color: #fff;
+   			background-color: #fff;
+   			color: #4D4D5D;
+   			font-family: Open Sans, Sans-serif;
+   			font-weight: 300;
+   			font-size: 12px;
+  			letter-spacing: 3px;
+   		}
+
+   		.btn:focus, .btn:active:focus, .btn.active:focus {
+    		border-color: #FD4C4C;
+	   		background-color: #FD4C4C;
+	   		color: #fff;
+	   		box-shadow: none;
+		}
+
+		.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+		    border-color: #FD4C4C;
+	   		background-color: #FD4C4C;
+	   		color: #fff;
+		}
+   
+   }
 }
