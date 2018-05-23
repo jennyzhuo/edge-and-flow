@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import iphone from "../../../../../assets/images/01-intro-iphone.png";
-import header from "../../../../../assets/images/01-case-header.png";
+import iphone from "../../../../assets/images/01-intro-iphone.png";
+import header from "../../../../assets/images/01-case-header.png";
 @connect(() => {})
 
 class HackCase extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Home from "./modules/home/index";
-import Projects from "./modules/home/projects/Index";
+import Projects from "./modules/projects/Index";
 import Dynamo from "./modules/projects/dynamo/Index";
 import DynamoCase from "./modules/projects/dynamo/case";
 
@@ -30,18 +30,18 @@ class App extends Component {
       {/*------------------------------------*/}
 
       {/*project intro-----------------------*/}
-          {/*<div>
+          <div>
             <Dynamo />
           </div>
           <div>
             <Projects />
-          </div>*/}
+          </div>
       {/*------------------------------------*/}
 
       {/*project case-----------------------*/}
-          <div>
-            <DynamoCase />
-          </div>
+          {/*<div>*/}
+            {/*<DynamoCase />*/}
+          {/*</div>*/}
       {/*------------------------------------*/}
 
         </div>
