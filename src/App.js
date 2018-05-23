@@ -3,7 +3,7 @@ import Home from "./sections/home/Index";
 import Projects from "./sections/projects/Index";
 import Dynamo from "./sections/dynamo/Index";
 import DynamoCase from "./sections/dynamo/case";
-import Bootstrap from "bootstrap";
+
 
 // import splatter1 from "../assets/images/splatter1.svg";
 // import splatter2 from "../assets/images/splatter2.svg";

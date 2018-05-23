@@ -16,7 +16,7 @@ module.exports = {
   module: {
     rules: [
       {
-          test: /\.scss$/,
+          test: /\.(css|scss)$/,
           include: /(src|assets)/,
           use: [
               {
