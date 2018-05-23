@@ -1,10 +1,9 @@
-
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
 @connect(() => {})
 
-class Home extends Component {
+class Skills extends Component {
 
   render() {
 
@@ -36,4 +35,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Skills;

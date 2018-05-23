@@ -5,7 +5,7 @@ import iphone from "../../../assets/images/01-intro-iphone.png";
 
 @connect(() => {})
 
-class Dynamo extends Component {
+class Burris extends Component {
 
   render() {
 
@@ -34,4 +34,4 @@ class Dynamo extends Component {
   }
 }
 
-export default Dynamo;
+export default Burris;

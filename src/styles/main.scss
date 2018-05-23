@@ -4,11 +4,48 @@
 @import 'home';
 @import 'projects';
 
-@media (min-width: 1440px) {
+@media all and (max-width: 1440px) { 
   .container {
-    max-width: 1400px;
-  }
+    max-width: 1440px;
+  } 
+} 
+
+@media all and (max-width: 1199px) { 
+  .container {
+    max-width: 1199px;
+  } 
+} 
+
+@media all and (max-width: 991px) {
+  .container {
+    max-width: 991px;
+  } 
+} 
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  } 
+} 
+
+@media all and (max-width: 575px) {
+  .container {
+    max-width: 575px;
+  } 
 }
+
+
+// @media (min-width: 1440px) {
+//   .container {
+//     max-width: 1400px;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .container {
+//     max-width: 1240px;
+//   }
+// }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -81,7 +118,14 @@ h4 {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 3px;
-  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 p {

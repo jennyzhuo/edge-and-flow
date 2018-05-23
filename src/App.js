@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Home from "./sections/home/Index";
 import Projects from "./sections/projects/Index";
+import Dynamo from "./sections/dynamo/Index";
+import DynamoCase from "./sections/dynamo/case";
 import Bootstrap from "bootstrap";
 
 // import splatter1 from "../assets/images/splatter1.svg";
@@ -17,12 +19,31 @@ class App extends Component {
         <img src={splatter2} alt="backdrop"/>
         <img src={splatter3} alt="backdrop"/>*/}
         <div className="d-flex justify-content-center">
-          <div>
+
+      {/*landing page------------------------*/}
+          {/*<div>
             <Home />
           </div>
           <div>
             <Projects />
+          </div>*/}
+      {/*------------------------------------*/}
+
+      {/*project intro-----------------------*/}
+          {/*<div>
+            <Dynamo />
           </div>
+          <div>
+            <Projects />
+          </div>*/}
+      {/*------------------------------------*/}
+
+      {/*project case-----------------------*/}
+          <div>
+            <DynamoCase />
+          </div>
+      {/*------------------------------------*/}
+
         </div>
       </div>
 
