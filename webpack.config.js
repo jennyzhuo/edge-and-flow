@@ -6,8 +6,8 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:9000',
     'webpack/hot/only-dev-server',
-    "./src/Index.js", 
-    "./src/styles/main.scss"
+    "./src/index.js",
+    "./src/main.scss"
   ],
   output: {
     filename: "bundle.js",

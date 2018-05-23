@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Home from "./sections/home/Index";
-import Projects from "./sections/projects/Index";
-import Dynamo from "./sections/dynamo/Index";
-import DynamoCase from "./sections/dynamo/case";
+import Home from "./modules/home/index";
+import Projects from "./modules/home/projects/Index";
+import Dynamo from "./modules/projects/dynamo/Index";
+import DynamoCase from "./modules/projects/dynamo/case";
 
 
 // import splatter1 from "../assets/images/splatter1.svg";

@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import iphone from "../../../assets/images/01-intro-iphone.png";
+import iphone from "../../../../assets/images/01-intro-iphone.png";
 
 @connect(() => {})
 
