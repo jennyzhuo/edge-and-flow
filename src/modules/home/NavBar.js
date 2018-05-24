@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default ({ history }) => (
+export default () => (
   <div className="menu p-3">
     <div className="btn-group btn-group-sm" role="group">
-      <Link to="/home">
+      <Link to="/">
         <button type="button" className="btn btn-secondary px-3">01 HOME</button>
       </Link>
-      <Link to="/dynamo">
+      <Link to="/personal">
         <button type="button" className="btn btn-secondary px-3">02 PERSONAL</button>
       </Link>
       <Link to="/interests">

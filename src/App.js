@@ -26,9 +26,9 @@ class App extends Component {
           <Router history={history}>
             <Route render={({ location }) => (
                 <Switch location={location}>
-                  <Route path='/home' component={Home} />
+                  <Route path='/' component={Home} />
                   <Route path='/dynamo' component={DynamoCase} />
-                  <Redirect from='/' to='/home' />
+                  {/*<Redirect from='/' to='/home' />*/}
                 </Switch>
               )}
             />
