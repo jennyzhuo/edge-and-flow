@@ -11,11 +11,11 @@ class DynamoCase extends Component {
 
     return (
     	<div className="case 01">
-    		<div className="row">
-	    	  <div className="col-6 header d-flex align-items-center">
+    		<div className="d-flex flex-row">
+	    	  <div className="header d-flex align-items-center">
 				<img src={header} alt="macbook"/>
 	    	  </div>
-		      <div className="col-6 dynamo p-5">
+		      <div className="dynamo p-5">
 			      <div className="p-5">
 			        <h2 className="number pb-2">01</h2>
 			        <h2 className="pt-4 pb-2">
