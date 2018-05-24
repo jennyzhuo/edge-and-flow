@@ -1,3 +1,4 @@
+@import 'dynamo/styles';
 
 .btn {
 	border-radius: 0px;
@@ -44,52 +45,52 @@
    }
 }
 
-.dynamo {
-	.card {
-		height: 80vh;
-		background: #fff;
-		border: none;
-		-webkit-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
-		-moz-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
-		box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
-	}
+// .dynamo {
+// 	.card {
+// 		height: 80vh;
+// 		background: #fff;
+// 		border: none;
+// 		-webkit-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+// 		-moz-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+// 		box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+// 	}
 
-	.number {
-		width: 60px;
-		border-bottom: 2px solid #FD4C4C;
-	}
+// 	.number {
+// 		width: 60px;
+// 		border-bottom: 2px solid #FD4C4C;
+// 	}
 
-	.intro {
-		width: 25vw;
-	}
+// 	.intro {
+// 		width: 25vw;
+// 	}
 
-	.btn {
-		width: 150px;
-		border-color: #FD4C4C;
-		background-color: #FD4C4C;
-		color: #fff;
-	}
+// 	.btn {
+// 		width: 150px;
+// 		border-color: #FD4C4C;
+// 		background-color: #FD4C4C;
+// 		color: #fff;
+// 	}
 
-	.iphone {
-		position: fixed;
-		top: 30%;
-		left: 40%;
+// 	.iphone {
+// 		position: fixed;
+// 		top: 30%;
+// 		left: 40%;
 
-		img {
-			max-height: 53vh;
-		}
-	}
-}
+// 		img {
+// 			max-height: 53vh;
+// 		}
+// 	}
+// }
 
-.case {
-	.header {
-		img {
-			max-width: 58vw;
-		}
-	}
+// .case {
+// 	.header {
+// 		img {
+// 			max-width: 58vw;
+// 		}
+// 	}
 
-	.dynamo {
-		padding-left: 100px !important;
-	}
-}
+// 	.dynamo {
+// 		padding-left: 100px !important;
+// 	}
+// }
 

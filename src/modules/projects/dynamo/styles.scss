@@ -1,0 +1,59 @@
+.dynamo {
+	.section {
+		max-width: 100vw;
+	}
+
+	.dynamo-preview {
+		.card {
+			background: #fff;
+			border: none;
+			-webkit-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+			box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+			
+			&.project {
+				height: 80vh;
+			}
+
+		}
+
+		.number {
+			width: 60px;
+			border-bottom: 2px solid #FD4C4C;
+		}
+
+		.intro {
+			width: 25vw;
+		}
+
+		.btn {
+			width: 150px;
+			border-color: #FD4C4C;
+			background-color: #FD4C4C;
+			color: #fff;
+		}
+
+		.iphone {
+			position: fixed;
+			top: 30%;
+			left: 40%;
+
+			img {
+				max-height: 53vh;
+			}
+		}
+	}
+
+	.header {
+		img {
+			max-width: 58vw;
+		}
+	}
+
+	.v-bar {
+		color: #4D4D5D;
+		height: 50px;
+		width: 2px;
+	}
+
+}
