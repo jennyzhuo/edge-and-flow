@@ -1,0 +1,157 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import 'modules/home/styles';
+@import 'modules/projects/styles';
+
+@media all and (max-width: 1440px) { 
+  .container {
+    max-width: 1440px;
+  } 
+} 
+
+@media all and (max-width: 1199px) { 
+  .container {
+    max-width: 1199px;
+  } 
+} 
+
+@media all and (max-width: 991px) {
+  .container {
+    max-width: 991px;
+  } 
+} 
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  } 
+} 
+
+@media all and (max-width: 575px) {
+  .container {
+    max-width: 575px;
+  } 
+}
+
+
+// @media (min-width: 1440px) {
+//   .container {
+//     max-width: 1400px;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .container {
+//     max-width: 1240px;
+//   }
+// }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  font-family: 'Open Sans', sans-serif;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+  line-height: 2;
+  background: #ffffff;
+  color: #4D4D5D;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-side {
+  width: 50vw;
+}
+
+.right-side {
+  width: 50vw;
+}
+
+
+h1 {
+  font-size: 65px;
+  font-weight: 800;
+  letter-spacing: 8.5px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 5.5px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+  border: 2px solid #666;
+}

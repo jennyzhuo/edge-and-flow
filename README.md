@@ -67,11 +67,11 @@ npm run build
    |  ├─ ActionTypes.js
    ├─ reducers/               # Create reducers here.
    |  ├─ counter.js
-   |  ├─ Index.js             # Combine your reducers here.
+   |  ├─ index.js             # Combine your reducers here.
    ├─ styles/                 # All styling goes here.
    |  ├─ main.scss
    ├─ App.js                  # Include your main component(s).
-   ├─ Index.js                # Passes state to App. Renders markup to DOM.
+   ├─ index.js                # Passes state to App. Renders markup to DOM.
    └─ store.js                # Creates and exports store.
 ```
 

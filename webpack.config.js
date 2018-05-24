@@ -6,17 +6,18 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:9000',
     'webpack/hot/only-dev-server',
-    "./src/Index.js", 
-    "./src/styles/main.scss"
+    "./src/index.js",
+    "./src/main.scss"
   ],
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "./public/dist")
+    path: path.resolve(__dirname, "./public/dist"),
+    publicPath: '/'
   },
   module: {
     rules: [
       {
-          test: /\.scss$/,
+          test: /\.(css|scss)$/,
           include: /(src|assets)/,
           use: [
               {
@@ -51,7 +52,8 @@ module.exports = {
   },
   devServer: {
     contentBase: "./public/",
-    watchContentBase: true
+    watchContentBase: true,
+    historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

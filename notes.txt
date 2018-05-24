@@ -1,0 +1,31 @@
+App
+	- Home (left, to Case Preview)
+		1. Intro (to each other)
+		2. Personal
+		3. Skills
+		4. Connect
+	- Case Preview (left, to Home, to Full)
+	- Case Detail (left, to Case Preview)
+	- Case NavBar (right, to Case Detail by sliding out right)
+
+URLs
+- /home/intro  || /personal || /skills || /connect
+- /case/dynamo/preview
+- /case/dynamo/detail
+
+Transition Classes
+- IntraHome
+- Home to CasePreview
+- CasePreview to Home
+- CasePreview to CaseDetail
+- CaseMenu to CaseDetail
+- CaseDetail to CasePreview
+- CaseDetail to CaseMenu
+
+
+TODO:
+- Create Home Directory with sub components
+- Move _home.scss into Home Directory
+- Implement Routes and Switches in App.js
+    1) Home -> Intro / Preview + NavBar
+    2) Case
