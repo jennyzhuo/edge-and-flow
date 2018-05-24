@@ -26,4 +26,6 @@ Transition Classes
 TODO:
 - Create Home Directory with sub components
 - Move _home.scss into Home Directory
--
+- Implement Routes and Switches in App.js
+    1) Home -> Intro / Preview + Menu
+    2) Case
