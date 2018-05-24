@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
+import iphone2 from "../../../../assets/images/01-case-iphone.png";
 @connect(() => {})
 
 class DynamoCase extends Component {
@@ -14,10 +15,10 @@ class DynamoCase extends Component {
         <div className="d-flex flex-row">
 
           <div className="header d-flex align-items-center">
-          <img src={header} alt="macbook"/>
+            <img src={header} alt="macbook"/>
           </div>
 
-        <div className="iphone">
+          <div className="iphone">
             <img src={iphone} alt="iphone"/>
           </div>
 
@@ -81,19 +82,88 @@ class DynamoCase extends Component {
             <div className="d-flex flex-row">
               <div>
                 <ul>
+                  <li>
+                    RESEARCH
+                  </li>
+                  <li>
+                    PROJECT MANAGEMENT
+                  </li>
+                  <li>
+                    BRAND STRATEGY
+                  </li>
+                  <li>
+                    VISUAL IDENTITY
+                  </li>
+                  <li>
+                    GRID LAYOUTS
+                  </li>
+                  <li>
+                    TYPOGRAPHY
+                  </li>
+                  <li>
+                    COLOR THEORY
+                  </li>
+                  <li>
+                    ICONOGRAPHY
+                  </li>
+                  <li>
+                    BRANDING GUIDE
+                  </li>
+                  <li>
+                    TEMPLATES
+                  </li>
                 </ul>
               </div>
+
               <div>
+                <ul>
+                  <li>
+                    CONCEPT
+                  </li>
+                  <li>
+                    SITEMAPPING
+                  </li>
+                  <li>
+                    WIREFRAMING
+                  </li>
+                  <li>
+                    PROTOTYPING
+                  </li>
+                  <li>
+                    UI/UX
+                  </li>
+                  <li>
+                    INTERACTION DESIGN
+                  </li>
+                  <li>
+                    ILLUSTRATION
+                  </li>
+                </ul>
               </div>
             </div>
-            <div>
+            <div className="iphone-iso">
+              <img src={iphone2} alt="iphone isometric"/>
             </div>
           </div>
 
           <div className="d-flex">
-            <div>
+            <div className="card case-long">
+              <h3>A DISTINCT IDENTITY</h3>
+              <p>
+                One of my largest undertakings to date - rebranding and building up presence 
+                for Dynamo. Completely transforming not only the logo but modernizing the brand 
+                identity as whole. Long term project that went through many stages, iterations, 
+                and production timelines. We set out to captivate our audience and invigorate our 
+                Dynamo family by showcasing spark and evoking energy.
+              </p>
             </div>
-            <div>
+            <div classname="d-flex flex-row">
+              <div className="case-square">
+              </div>
+              <div className="case-square">
+              </div>
+              <div className="case-square">
+              </div>
             </div>
           </div>
 
