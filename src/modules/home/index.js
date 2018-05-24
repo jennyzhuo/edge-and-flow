@@ -13,7 +13,6 @@ export default ({ history, match }) => (
     <Route path={`${match.url}/personal`} component={Personal} />
     <Route path={`${match.url}/interests`} component={Skills} />
     <Route path={`${match.url}/connect`} component={Connect} />
-
     <NavBar />
   </div>
 )
