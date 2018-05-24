@@ -1,17 +1,17 @@
 import React from "react";
+import Personal from "./personal";
+import Connect from "./connect";
+import Intro from "./intro";
+import Skills from "./skills";
+import NavBar from "./NavBar";
+import { Route } from 'react-router-dom'
 
-export default () => (
-  <div className="p-3">
-    <h1>EDGE & FLOW</h1>
-    <h4 className="pb-3">
-      UI UX DESIGN  //  GRAPHIC DESIGN  //  PAINTER  //  ILLUSTRATOR
-    </h4>
-    <p>
-      I love the thought that creativity can solve any problem, and so,
-      the creative process is always on my mind.  Making products as attractive
-      & well formed as they are effective is where I apply myself.
-      I am currently looking to join a team where quality work comes
-      from the cross-pollination of each other's enthusiasm.
-    </p>
+export default ({ match }) => (
+  <div className="left-side home p-5">
+    <Route exact path={`${match.url}`} component={Intro} />
+    <Route path={`${match.url}/personal`} component={Personal} />
+    <Route path={`${match.url}/interests`} component={Skills} />
+    <Route path={`${match.url}/connect`} component={Connect} />
+    <NavBar />
   </div>
 )

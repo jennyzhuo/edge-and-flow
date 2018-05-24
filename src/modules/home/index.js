@@ -5,18 +5,12 @@ import Personal from './personal';
 import Skills from './skills';
 import Connect from './connect';
 import ProjectMenu from './ProjectMenu';
-
+import Content from './Content';
 import { Route } from 'react-router-dom'
 
-export default ({ history, match }) => (
+export default ({ ...props }) => (
   [
-    <div className="left-side home p-5">
-      <Route exact path={`${match.url}`} component={Intro} />
-      <Route path={`${match.url}/personal`} component={Personal} />
-      <Route path={`${match.url}/interests`} component={Skills} />
-      <Route path={`${match.url}/connect`} component={Connect} />
-      <NavBar />
-    </div>,
+    <Content {...props} />,
     <ProjectMenu/>
   ]
 )
