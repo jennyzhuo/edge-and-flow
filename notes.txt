@@ -6,7 +6,7 @@ App
 		4. Connect
 	- Case Preview (left, to Home, to Full)
 	- Case Detail (left, to Case Preview)
-	- Case Menu (right, to Case Detail by sliding out right)
+	- Case NavBar (right, to Case Detail by sliding out right)
 
 URLs
 - /home/intro  || /personal || /skills || /connect
@@ -27,5 +27,5 @@ TODO:
 - Create Home Directory with sub components
 - Move _home.scss into Home Directory
 - Implement Routes and Switches in App.js
-    1) Home -> Intro / Preview + Menu
+    1) Home -> Intro / Preview + NavBar
     2) Case
