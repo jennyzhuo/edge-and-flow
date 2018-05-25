@@ -34,19 +34,6 @@
   } 
 }
 
-
-// @media (min-width: 1440px) {
-//   .container {
-//     max-width: 1400px;
-//   }
-// }
-
-// @media (min-width: 1280px) {
-//   .container {
-//     max-width: 1240px;
-//   }
-// }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,7 +69,7 @@ body {
 
 .container {
   padding: 0px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -109,7 +96,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   letter-spacing: 5.5px;
 }
@@ -135,6 +122,13 @@ p {
 
 ol, ul {
 	list-style: none;
+}
+
+li {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 blockquote, q {
