@@ -1,3 +1,4 @@
+@import 'dynamo/styles';
 
 .btn {
 	border-radius: 0px;
@@ -44,52 +45,59 @@
    }
 }
 
-.dynamo {
-	.card {
+.card {
+	border-radius: 0px !important;
+	background: #fff;
+	border: none;
+	-webkit-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
+	
+	&.project {
 		height: 80vh;
-		background: #fff;
-		border: none;
-		-webkit-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
-		-moz-box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
-		box-shadow: 0px 2px 18px 9px rgba(0,0,0,0.1);
 	}
 
-	.number {
-		width: 60px;
-		border-bottom: 2px solid #FD4C4C;
+	&.case-short {
+		width: 400px;
+		height: 500px;
 	}
 
-	.intro {
-		width: 25vw;
-	}
-
-	.btn {
-		width: 150px;
-		border-color: #FD4C4C;
-		background-color: #FD4C4C;
-		color: #fff;
-	}
-
-	.iphone {
-		position: fixed;
-		top: 30%;
-		left: 40%;
-
-		img {
-			max-height: 53vh;
-		}
+	&.case-tall {
+		width: 400px;
+		height: 800px;
 	}
 }
 
-.case {
-	.header {
-		img {
-			max-width: 58vw;
-		}
-	}
-
-	.dynamo {
-		padding-left: 100px !important;
-	}
+.red-gradient {
+	background-image: -webkit-linear-gradient(bottom left, #f69191, #fa8181, #fc7170, #fd605e, #fd4c4c);
+	background-image: -o-linear-gradient(bottom left, #f69191, #fa8181, #fc7170, #fd605e, #fd4c4c);
+	background-image: linear-gradient(to top right, #f69191, #fa8181, #fc7170, #fd605e, #fd4c4c);
 }
+
+.green-gradient {
+	background-image: -webkit-linear-gradient(bottom left, #4eb3c7, #4ac6d1, #4edad7, #5eedd8, #78ffd6);
+	background-image: -o-linear-gradient(bottom left, #4eb3c7, #4ac6d1, #4edad7, #5eedd8, #78ffd6);
+	background-image: linear-gradient(to top right, #4eb3c7, #4ac6d1, #4edad7, #5eedd8, #78ffd6);
+}
+
+.blue-gradient {
+	background-image: -webkit-linear-gradient(bottom left, #75c2dc, #63a2c0, #5384a2, #446785, #354b67);
+	background-image: -o-linear-gradient(bottom left, #75c2dc, #63a2c0, #5384a2, #446785, #354b67);
+	background-image: linear-gradient(to top right, #75c2dc, #63a2c0, #5384a2, #446785, #354b67);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
