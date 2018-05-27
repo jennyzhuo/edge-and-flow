@@ -1,57 +1,33 @@
 import React, { Component } from "react";
 import Home from "./modules/home/index";
-import Projects from "./modules/projects/Index";
-import Dynamo from "./modules/projects/dynamo/index";
 import DynamoCase from "./modules/projects/dynamo/case";
 import { Router, Switch, Route, Redirect } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import Transitions from './modules/transitions'
 
-
-// import splatter1 from "../assets/images/splatter1.svg";
-// import splatter2 from "../assets/images/splatter2.svg";
-// import splatter3 from "../assets/images/splatter3.svg";
 import { hot } from 'react-hot-loader'
 
 const history = createHistory()
 class App extends Component {
   render() {
     return (
-      <div className="container d-flex align-items-center">
-        {/*<img src={splatter1} alt="backdrop"/>
-        <img src={splatter2} alt="backdrop"/>
-        <img src={splatter3} alt="backdrop"/>*/}
 
-
-          <Router history={history}>
-            <Route render={({ location }) => (
-              <TransitionGroup>
-                <CSSTransition key={location.key} classNames="example" timeout={3000}>
-                  <div className="d-flex justify-content-center">
-                    <Switch location={location}>
-                      <Route path='/(home|preview)' component={Home} />
-                      <Route path='/case/dynamo' component={DynamoCase} />
-                      <Redirect from='/' to='/home' />
-                    </Switch>
-                  </div>
-                </CSSTransition>
-              </TransitionGroup>
-              )}
-            />
-          </Router>
-
-          {/*
-              <TransitionGroup>
-                <CSSTransition key={location.key} classNames="fade" timeout={300}>
-                  <Switch location={location}>
-                    <Route path='/(home|preview)' component={Home} />
-                    <Route path='/case/dynamo' component={DynamoCase} />
-                    <Redirect from='/' to='/home' />
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-              */}
-      </div>
+      <Router history={history}>
+        <Route render={({ location }) => (
+          <Transitions pageKey={location.key} {...location.state}>
+            <div className="container d-flex align-items-center">
+              <div className="d-flex justify-content-center">
+                <Switch location={location}>
+                  <Route path='/(home|preview)' component={Home} />
+                  <Route path='/case/dynamo' component={DynamoCase} />
+                  <Redirect from='/' to='/home' />
+                </Switch>
+              </div>
+            </div>
+          </Transitions>
+          )}
+        />
+      </Router>
 
     );
   }
