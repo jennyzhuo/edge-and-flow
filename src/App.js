@@ -26,9 +26,8 @@ class App extends Component {
           <Router history={history}>
             <Route render={({ location }) => (
               <TransitionGroup>
-                <CSSTransition key={location.key} classNames="fade" timeout={3000}>
+                <CSSTransition key={location.key} classNames="example" timeout={3000}>
                   <div className="d-flex justify-content-center">
-
                     <Switch location={location}>
                       <Route path='/(home|preview)' component={Home} />
                       <Route path='/case/dynamo' component={DynamoCase} />
@@ -52,31 +51,6 @@ class App extends Component {
                 </CSSTransition>
               </TransitionGroup>
               */}
-
-      {/*landing page------------------------*/}
-          {/*<div>
-            <Home />
-          </div>
-          <div>
-            <Projects />
-          </div>*/}
-      {/*------------------------------------*/}
-
-      {/*project intro-----------------------*/}
-          {/*<div>*/}
-            {/*<Dynamo />*/}
-          {/*</div>*/}
-          {/*<div>*/}
-            {/*<Projects />*/}
-          {/*</div>*/}
-      {/*------------------------------------*/}
-
-      {/*project case-----------------------*/}
-          {/*<div>*/}
-            {/*<DynamoCase />*/}
-          {/*</div>*/}
-      {/*------------------------------------*/}
-
       </div>
 
     );
