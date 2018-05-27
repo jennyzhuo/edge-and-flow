@@ -1,5 +1,6 @@
 import React from "react";
 import iphone from "../../../../assets/images/01-intro-iphone.png";
+import { Link } from 'react-router-dom';
 
 export default () => (
   <div className="left-side dynamo-preview p-5">
@@ -16,7 +17,9 @@ export default () => (
         iterations, and production timelines. We set out to captivate our audience
         and invigorate our Dynamo family by showcasing spark and evoking energy.
       </p>
-      <button type="button" className="btn btn-secondary px-3">THERE'S MORE</button>
+			<Link to={'/case/dynamo'}>
+        <button type="button" className="btn btn-secondary px-3">THERE'S MORE</button>
+			</Link>
     </div>
     <div className="iphone">
       <img src={iphone} alt="iphone"/>

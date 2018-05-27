@@ -27,8 +27,7 @@ class App extends Component {
             <Route render={({ location }) => (
                 <Switch location={location}>
                   <Route path='/(home|preview)' component={Home} />
-                  {/*<Route path='/preview' component={Home} />*/}
-                  <Route path='/dynamo' component={DynamoCase} />
+                  <Route path='/case/dynamo' component={DynamoCase} />
                   <Redirect from='/' to='/home' />
                 </Switch>
               )}

@@ -4,7 +4,7 @@ import About from './About';
 import { Route, Switch } from 'react-router-dom';
 import DynamoPreview from "../projects/dynamo/index";
 
-export default ({ location, ...props }) => (
+export default () => (
   [
     <Route render={({ location }) => (
       <Switch location={location}>
