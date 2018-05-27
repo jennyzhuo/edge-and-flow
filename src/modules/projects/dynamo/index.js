@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { previewToCase } from '../../transitions';
 
 export default () => (
-  <div className="left-side dynamo-preview p-5">
+  <div className="left-side preview dynamo-preview p-5">
     <div className="card project p-5">
       <h2 className="number pb-2">01</h2>
       <h2 className="pt-4 pb-2">
