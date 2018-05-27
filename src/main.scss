@@ -172,17 +172,22 @@ hr {
 
 .example-enter {
   opacity: 0.01;
+  position: absolute;
+
   //width: 0px;
   //z-index: 2;
 }
 
 .example-enter.example-enter-active {
+  position: absolute;
+
   opacity: 1;
   //width: 100px;
   transition: opacity 3000ms ease-in;
 }
 
 .example-exit {
+  position: absolute;
   opacity: 1;
   //width: 100px;
   //z-index: 1;
@@ -193,6 +198,8 @@ hr {
 
   // add subclasses here for specific animations
   .menu {
+    position: absolute;
+
     //width: 0px;
     opacity: 0.01;
     transition: opacity 3000ms ease-in;
