@@ -161,8 +161,8 @@ class DynamoCase extends Component {
           </div>
 
 
-          <div className="d-flex trio align-items-center">
-            <div className="section d-flex">
+          <div className="d-flex trio align-items-center justify-content-center">
+            <div className="d-flex">
               <div className="p-2 case-square red-gradient">
               </div>
               <div className="p-2 case-square green-gradient">
