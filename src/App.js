@@ -5,6 +5,7 @@ import Dynamo from "./modules/projects/dynamo/index";
 import DynamoCase from "./modules/projects/dynamo/case";
 import { Router, Switch, Route, Redirect } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 
 // import splatter1 from "../assets/images/splatter1.svg";
@@ -20,20 +21,37 @@ class App extends Component {
         {/*<img src={splatter1} alt="backdrop"/>
         <img src={splatter2} alt="backdrop"/>
         <img src={splatter3} alt="backdrop"/>*/}
-        <div className="d-flex justify-content-center">
 
 
           <Router history={history}>
             <Route render={({ location }) => (
-                <Switch location={location}>
-                  <Route path='/(home|preview)' component={Home} />
-                  <Route path='/case/dynamo' component={DynamoCase} />
-                  <Redirect from='/' to='/home' />
-                </Switch>
+              <TransitionGroup>
+                <CSSTransition key={location.key} classNames="fade" timeout={3000}>
+                  <div className="d-flex justify-content-center">
+
+                    <Switch location={location}>
+                      <Route path='/(home|preview)' component={Home} />
+                      <Route path='/case/dynamo' component={DynamoCase} />
+                      <Redirect from='/' to='/home' />
+                    </Switch>
+                  </div>
+                </CSSTransition>
+              </TransitionGroup>
               )}
             />
           </Router>
 
+          {/*
+              <TransitionGroup>
+                <CSSTransition key={location.key} classNames="fade" timeout={300}>
+                  <Switch location={location}>
+                    <Route path='/(home|preview)' component={Home} />
+                    <Route path='/case/dynamo' component={DynamoCase} />
+                    <Redirect from='/' to='/home' />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+              */}
 
       {/*landing page------------------------*/}
           {/*<div>
@@ -59,7 +77,6 @@ class App extends Component {
           {/*</div>*/}
       {/*------------------------------------*/}
 
-        </div>
       </div>
 
     );
