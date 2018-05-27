@@ -29,3 +29,7 @@ TODO:
 - Implement Routes and Switches in App.js
     1) Home -> Intro / Preview + NavBar
     2) Case
+
+
+Questions:
+- on position: absolute animations, why is there an offset from the top?
