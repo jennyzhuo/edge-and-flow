@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./modules/home/index";
 import Projects from "./modules/projects/Index";
-import Dynamo from "./modules/projects/dynamo/Index";
+import Dynamo from "./modules/projects/dynamo/index";
 import DynamoCase from "./modules/projects/dynamo/case";
 import { Router, Switch, Route, Redirect } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
@@ -26,8 +26,8 @@ class App extends Component {
           <Router history={history}>
             <Route render={({ location }) => (
                 <Switch location={location}>
-                  <Route path='/home' component={Home} />
-                  <Route path='/dynamo' component={DynamoCase} />
+                  <Route path='/(home|preview)' component={Home} />
+                  <Route path='/case/dynamo' component={DynamoCase} />
                   <Redirect from='/' to='/home' />
                 </Switch>
               )}

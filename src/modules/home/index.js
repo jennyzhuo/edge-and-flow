@@ -1,19 +1,18 @@
 import React from "react";
-import NavBar from './NavBar';
-import Intro from './intro';
-import Personal from './personal';
-import Skills from './skills';
-import Connect from './connect';
+import ProjectMenu from './ProjectMenu';
+import About from './About';
+import { Route, Switch } from 'react-router-dom';
+import DynamoPreview from "../projects/dynamo/index";
 
-import { Route } from 'react-router-dom'
-
-export default ({ history, match }) => (
-  <div className="left-side home p-5">
-		<Route exact path={`${match.url}`} component={Intro} />
-    <Route path={`${match.url}/personal`} component={Personal} />
-    <Route path={`${match.url}/interests`} component={Skills} />
-    <Route path={`${match.url}/connect`} component={Connect} />
-    <NavBar />
-  </div>
+export default () => (
+  [
+    <Route render={({ location }) => (
+      <Switch location={location}>
+        <Route path='/home' component={About} />
+        <Route path='/preview/dynamo' component={DynamoPreview} />
+      </Switch>
+    )}/>,
+    <ProjectMenu />
+  ]
 )
 
