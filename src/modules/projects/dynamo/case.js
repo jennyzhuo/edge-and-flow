@@ -1,4 +1,3 @@
-
 import React from "react";
 import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
