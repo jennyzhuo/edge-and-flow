@@ -21,7 +21,7 @@ export default () => (
             and invigorate our Dynamo family by showcasing spark and evoking energy.
           </p>
     			<Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
-            <button type="button" className="btn btn-secondary px-3">THERE'S MORE</button>
+            <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>
     			</Link>
         </div>
         <div className="iphone">
