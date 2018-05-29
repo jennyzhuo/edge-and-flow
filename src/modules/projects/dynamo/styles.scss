@@ -21,7 +21,7 @@
 		}
 	}
 
-	.dynamo-preview {
+	&.preview {
 
 		.number {
 			width: 60px;
@@ -29,7 +29,9 @@
 		}
 
 		.intro {
-			width: 25vw;
+			@media all and (max-width: 1199px) { 
+				width: 23vw;
+			}
 		}
 
 		.btn {
@@ -55,10 +57,13 @@
 	.iphone {
 		position: absolute;
 		top: 200px;
-		left: 40%;
+		left: 35%;
 
-		img {
-			max-height: 53vh;
+		@media all and (max-width: 1199px) { 
+
+			img {
+				max-height: 500px;
+			}
 		}
 	}
 
