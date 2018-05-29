@@ -18,10 +18,10 @@ export default ({ transition = '', duration = 0, pageKey, children }) => (
 )
 
 export const aboutToAbout = { transition: 'about-to-about', duration: 3000 };
-export const previewToCase = { transition: 'example', duration: 3000 };
-export const aboutToPreview = { transition: 'about-to-preview', duration: 3000 };
-export const previewToAbout = { transition: 'fade', duration: 3000 };
-export const caseToPreview = { transition: 'fade', duration: 3000 };
-export const previewToPreview = { transition: '', duration: 3000 };
+export const previewToCase = { transition: 'example', duration: 1000 };
+export const aboutToPreview = { transition: 'about-to-preview', duration: 1000 };
+export const previewToAbout = { transition: 'fade', duration: 1000 };
+export const caseToPreview = { transition: 'fade', duration: 1000 };
+export const previewToPreview = { transition: '', duration: 1000 };
 // export { default as slide } from './slide'
 // export { default as scale } from './scale'

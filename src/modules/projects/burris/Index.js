@@ -1,11 +1,11 @@
 
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import iphone from "../../../assets/images/01-intro-iphone.png";
+import iphone from "../../../../assets/images/01-intro-iphone.png";
 
 @connect(() => {})
 
-class Burris extends Component {
+class BurrisPreview extends Component {
 
   render() {
 
@@ -34,4 +34,4 @@ class Burris extends Component {
   }
 }
 
-export default Burris;
+export default BurrisPreview;

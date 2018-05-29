@@ -15,7 +15,7 @@ class App extends Component {
       <Router history={history}>
         <Route render={({ location }) => (
           <Transitions pageKey={location.key} {...location.state}>
-            <div className="container d-flex align-items-center">
+            <div className="container d-flex">
               <div className="d-flex justify-content-center">
                 <Switch location={location}>
                   <Route path='/(home|preview)' component={Home} />

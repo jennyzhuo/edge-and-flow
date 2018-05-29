@@ -1,9 +1,9 @@
 import React from "react";
 
 export default () => (
-  <div className="p-3 content">
-    <h1 className="slide-in-left title">EDGE & FLOW</h1>
-    <h4 className="pb-3 slide-in-left subtitle">
+  <div className="content">
+    <h1 className="slide-in-left title pb-4 mb-4">JENNY ZHUO</h1>
+    <h4 className="py-3 slide-in-left subtitle">
       UI UX DESIGN  //  GRAPHIC DESIGN  //  PAINTER  //  ILLUSTRATOR
     </h4>
     <p className="slide-in-left body">

@@ -1,11 +1,11 @@
 
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import iphone from "../../../assets/images/01-intro-iphone.png";
+import iphone from "../../../../assets/images/01-intro-iphone.png";
 
 @connect(() => {})
 
-class Captis extends Component {
+class CaptisPreview extends Component {
 
   render() {
 
@@ -34,4 +34,4 @@ class Captis extends Component {
   }
 }
 
-export default Captis;
+export default CaptisPreview;
