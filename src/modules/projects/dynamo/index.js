@@ -6,7 +6,7 @@ import { previewToCase } from '../../transitions';
 export default () => (
   <div className="d-flex align-items-center">
     <div className="d-flex justify-content-center">
-      <div className="left-side preview dynamo-preview py-5 pl-5">
+      <div className="left-side preview dynamo py-5 pl-5">
         <div className="card project p-5">
           <h2 className="number pb-2">01</h2>
           <h2 className="pt-4 pb-2">

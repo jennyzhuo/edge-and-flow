@@ -13,10 +13,10 @@ export default () => (
     <Route render={({ location }) => (
       <Switch location={location}>
         <Route path='/home' component={About} />
-        <Route path='/preview/dynamo' component={DynamoPreview} />
-        <Route path='/preview/dynamo' component={CaptisPreview} />
-        <Route path='/preview/dynamo' component={BurrisPreview} />
-        <Route path='/preview/dynamo' component={HackathonPreview} />
+        <Route exact path='/preview/dynamo' component={DynamoPreview} />
+        <Route exact path='/preview/captis' component={CaptisPreview} />
+        <Route exact path='/preview/burris' component={BurrisPreview} />
+        <Route exact path='/preview/hackathon' component={HackathonPreview} />
       </Switch>
     )}/>,
     <ProjectMenu />
