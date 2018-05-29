@@ -1,44 +1,17 @@
 @import 'dynamo/styles';
 
-.btn {
-	border-radius: 0px;
-	border-color: #fff;
-	background-color: #fff;
-	color: #4D4D5D;
-	font-family: Open Sans, Sans-serif;
-	font-weight: 300;
-	font-size: 12px;
-	letter-spacing: 3px;
-	text-align: left;
-}
-	
-.btn:focus, .btn:active:focus, .btn.active:focus {
-	border-color: none;
-	background-color: none;
-	color: #4D4D5D;
-	font-weight: 600;
-	box-shadow: none;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-    border-color: #FD4C4C;
-	background-color: #FD4C4C;
-	color: #fff;
-}
-
 .projects {
-	//position: fixed;
-	top: 50%;
+	height: 50vh;
 
 	.menu {
-
+		position: relative;
+		left: -10px;
    }
 }
 
 .home {
-  	flex: wrap;
-    position: relative;
-    top: 35%;
+    height: 60vh;
+	padding-left: 10vw !important;
 
    .menu {
 
@@ -89,13 +62,77 @@
 .iphone {
 	position: absolute;
 	top: 200px;
-	left: 40%;
+	left: 35%;
 
 	img {
 		max-height: 53vh;
 	}
 }
 
+.btn {
+	border-radius: 0px;
+	border-color: #fff;
+	background-color: #fff;
+	color: #4D4D5D;
+	font-family: Open Sans, Sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-align: left;
+}
+	
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	border-color: none;
+	background-color: none;
+	color: #4D4D5D;
+	font-weight: 600;
+	box-shadow: none;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    border-color: #FD4C4C;
+	background-color: #FD4C4C;
+	color: #fff;
+}
+
+
+@media all and (max-width: 1199px) { 
+	.btn {
+		border-radius: 0px;
+		border-color: transparent;
+		background-color: transparent;
+		color: #4D4D5D;
+		font-family: Open Sans, Sans-serif;
+		font-weight: 300;
+		font-size: 11px;
+		letter-spacing: 2.5px;
+		text-align: left;
+	}
+		
+	.btn:focus, .btn:active:focus, .btn.active:focus {
+		border-color: none;
+		background-color: none;
+		color: #4D4D5D;
+		font-weight: 600;
+		box-shadow: none;
+	}
+
+	.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+	    border-color: #FD4C4C;
+		background-color: #FD4C4C;
+		color: #fff;
+	}
+
+	.projects {
+		//position: fixed;
+		height: 50vh;
+
+		.menu {
+
+	   }
+	}
+
+}
 
 
 

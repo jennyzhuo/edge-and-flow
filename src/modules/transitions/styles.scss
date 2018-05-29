@@ -1,12 +1,4 @@
 // transitions
-.menu-enter {
-  opacity: 0;
-}
-
-.menu-enter.menu-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in;
-}
 
 .fade-enter {
   opacity: 0;
@@ -24,6 +16,25 @@
   transition: opacity 1000ms ease-in;
   z-index: 1;
   //position:relative;
+}
+
+.about-to-about-enter {
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+}
+
+.about-to-about-enter.about-to-about-enter-active {
+  opacity: 1;
+  transition: all 1000ms ease-in;
+}
+
+.about-to-about-exit {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+  z-index: 1;
+  position: relative;
+  top: -1000px;
 }
 
 .example-enter {
@@ -155,34 +166,34 @@
 }
 
 .slide-bottom.one {
-    -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .2s both;
-            animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .2s both;
+    -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) 0s both;
+            animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) 0s both;
 } 
   
 
 .slide-bottom.two {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .1s both;
+          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .1s both;
+}
+
+.slide-bottom.three {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .2s both;
+          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .2s both;
+}
+
+.slide-bottom.four {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .3s both;
+          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .3s both;
+}
+
+.slide-bottom.five {
   -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .4s both;
           animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .4s both;
 }
 
-.slide-bottom.three {
-  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .6s both;
-          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .6s both;
-}
-
-.slide-bottom.four {
-  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .8s both;
-          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .8s both;
-}
-
-.slide-bottom.five {
-  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) 1s both;
-          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) 1s both;
-}
-
 .slide-bottom.six {
-  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) 1.2s both;
-          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) 1.2s both;
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .5s both;
+          animation: slide-bottom 1s cubic-bezier(0.755, 0.050, 0.855, 0.060) .5s both;
 }  
 
 
