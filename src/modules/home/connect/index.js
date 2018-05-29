@@ -1,7 +1,7 @@
 import React from "react";
 
 export default () => (
-  <div className="p-3">
+  <div className="p-3 content">
     <h1>CONNECT</h1>
     <h4 className="pb-3">
       UI UX DESIGN  //  GRAPHIC DESIGN  //  PAINTER  //  ILLUSTRATOR

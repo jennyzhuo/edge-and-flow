@@ -1,4 +1,6 @@
 // transitions
+@import 'about-to-about';
+@import 'about-to-preview';
 
 .fade-enter {
   opacity: 0;
@@ -18,24 +20,6 @@
   //position:relative;
 }
 
-.about-to-about-enter {
-  opacity: 1;
-  z-index: 2;
-  position: relative;
-}
-
-.about-to-about-enter.about-to-about-enter-active {
-  opacity: 1;
-  transition: all 1000ms ease-in;
-}
-
-.about-to-about-exit {
-  opacity: 1;
-  transition: opacity 1000ms ease-in;
-  z-index: 1;
-  position: relative;
-  top: -1000px;
-}
 
 .example-enter {
   opacity: 0.01;
@@ -77,49 +61,7 @@
   //transition: opacity 3000ms ease-in;
 }
 
-.about-to-preview-enter {
-  position:absolute;
-  .home {
-    opacity: 1;
-  }
-  .preview {
-    opacity: 0.01;
-  }
-}
 
-.about-to-preview-enter.about-to-preview-enter-active {
-  position:absolute;
-  .home {
-    opacity: 0.01;
-    transition: opacity 3000ms ease-in;
-  }
-  .preview {
-    opacity: 1;
-    transition: opacity 3000ms ease-in;
-  }
-}
-
-.about-to-preview-exit {
-  position:absolute;
-  .home {
-    opacity: 0.01;
-  }
-  .preview {
-    opacity: 1;
-  }
-}
-
-.about-to-preview-exit.about-to-preview-enter-exit {
-  position:absolute;
-  .home {
-    opacity: 1;
-    transition: opacity 3000ms ease-in;
-  }
-  .preview {
-    opacity: 0.01;
-    transition: opacity 3000ms ease-in;
-  }
-}
 
 
 //----------------------------------------------------------
@@ -221,4 +163,5 @@
     opacity: 1;    
   }
 }
+
 

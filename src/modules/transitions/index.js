@@ -17,7 +17,7 @@ export default ({ transition = '', duration = 0, pageKey, children }) => (
   </TransitionGroup>
 )
 
-export const aboutToAbout = { transition: 'fade', duration: 1000 };
+export const aboutToAbout = { transition: 'about-to-about', duration: 3000 };
 export const previewToCase = { transition: 'example', duration: 1000 };
 export const aboutToPreview = { transition: 'about-to-preview', duration: 1000 };
 export const previewToAbout = { transition: 'fade', duration: 1000 };
