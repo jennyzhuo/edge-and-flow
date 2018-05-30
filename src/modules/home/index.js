@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectMenu from './ProjectMenu';
-import About from './About';
+import About from './about/index';
 import { Route, Switch } from 'react-router-dom';
 import DynamoPreview from "../projects/dynamo/index";
 import CaptisPreview from "../projects/captis/index";

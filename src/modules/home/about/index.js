@@ -1,11 +1,11 @@
 import React from "react";
-import Personal from "./personal";
-import Connect from "./connect";
-import Intro from "./intro";
-import Skills from "./skills";
+import Personal from "./personal/index";
+import Connect from "./connect/index";
+import Intro from "./intro/index";
+import Skills from "./skills/index";
 import NavBar from "./NavBar";
 import { Route } from 'react-router-dom'
-import UpdateBlocker from '../../components/UpdateBlocker';
+import UpdateBlocker from '../../../components/UpdateBlocker';
 
 export default ({ match, location }) => (
 	<div className="d-flex align-items-end">

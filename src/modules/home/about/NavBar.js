@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { aboutToAbout } from "../transitions";
+import { aboutToAbout } from "../../transitions/index";
 
 export default ({ location }) => {
   return (
