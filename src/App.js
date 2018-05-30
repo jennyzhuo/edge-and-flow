@@ -9,12 +9,18 @@ import { hot } from 'react-hot-loader'
 
 const history = createHistory()
 class App extends Component {
+
   render() {
+
     return (
 
       <Router history={history}>
-        <Route render={({ location }) => (
-          <Transitions pageKey={location.key} {...location.state}>
+        <Route render={({ location }) => {
+          console.log("location = ", location);
+          const key = location.pathname.split("/")[1] || '/';
+
+          return (
+          <Transitions pageKey={key} {...location.state}>
             <div className="container d-flex">
               <div className="d-flex justify-content-center">
                 <Switch location={location}>
@@ -25,7 +31,7 @@ class App extends Component {
               </div>
             </div>
           </Transitions>
-          )}
+          )}}
         />
       </Router>
 

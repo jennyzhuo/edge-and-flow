@@ -5,6 +5,7 @@ import Intro from "./intro";
 import Skills from "./skills";
 import NavBar from "./NavBar";
 import { Route } from 'react-router-dom'
+import UpdateBlocker from '../../components/UpdateBlocker';
 
 export default ({ match, location }) => (
 	<div className="d-flex align-items-end">
