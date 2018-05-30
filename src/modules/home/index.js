@@ -7,8 +7,13 @@ import CaptisPreview from "../projects/captis/index";
 import BurrisPreview from "../projects/burris/index";
 import HackathonPreview from "../projects/hackathon/index";
 import UpdateBlocker from '../../components/UpdateBlocker';
+import { withRouter } from 'react-router';
 
-export default () => (
+export default withRouter(({ location }) => {
+
+  // console.log("props = ", props);
+
+  return (
   [
     <Route render={({ location }) => (
       <Switch location={location}>
@@ -23,6 +28,6 @@ export default () => (
       <ProjectMenu />
     </UpdateBlocker>
   ]
-)
+)})
 
 export { default as homeReducer } from './reducer';

@@ -40,6 +40,7 @@ consistent project menu (possibly navbar)
 - change routes for navbar to use url param
 - what is location.key? can it be set to something else?
 - do we know if location.key determines a new transition?
+- how do regular css transitions work
 
 plan:
 - have multiple

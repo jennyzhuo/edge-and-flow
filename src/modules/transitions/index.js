@@ -19,12 +19,12 @@ const childFactoryCreator = (props) => child => React.cloneElement(child, props)
 
 class Transition extends Component {
 
-  shouldComponentUpdate(nextProps) {
-    // if (this.props.pageKey !== nextProps.pageKey) return true;
-    // return false;
-
-    return this.props.pageKey !== nextProps.pageKey;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   // if (this.props.pageKey !== nextProps.pageKey) return true;
+  //   // return false;
+  //
+  //   return this.props.pageKey !== nextProps.pageKey;
+  // }
 
   render() {
 
