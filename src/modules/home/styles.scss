@@ -4,5 +4,40 @@
     position: fixed;
     top: 50%;
   }
+
+  .menu {
+    .btn-secondary:active, .btn-secondary.active {
+      border-color: #FD4C4C;
+      background-color: #FD4C4C;
+      color: white;
+    }
+
+    .btn-secondary:focus, .btn-secondary:hover {
+      border-color: #FD4C4C;
+      background-color: white;
+      //color: #fff;
+      color: #4d4d5d;
+    }
+
+    .btn-secondary:focus {
+      border-color: #FD4C4C;
+      background-color: #FD4C4C;
+      color: #fff;
+    }
+
+    //.btn:focus, .btn:active:focus, .btn.active:focus {
+    //  border-color: none;
+    //  background-color: none;
+    //  color: #4D4D5D;
+    //  font-weight: 600;
+    //  box-shadow: none;
+    //}
+    //
+    //.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    //  border-color: #FD4C4C;
+    //  background-color: #FD4C4C;
+    //  color: #fff;
+    //}
+  }
 }
 
