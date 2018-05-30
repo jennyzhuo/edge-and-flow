@@ -6,12 +6,13 @@
 
 // Read more on Reducers - https://redux.js.org/docs/basics/Reducers.html
 
-import { SET_PROJECT_MENU_OPEN } from './constants'
+import { TOGGLE_PROJECT_MENU_OPEN } from './constants'
 
 export default function reducer(state = { isProjectMenuOpen: false }, action) {
   switch (action.type) {
-    case SET_PROJECT_MENU_OPEN:
-      return { isProjectMenuOpen: action.data, ...state };
+    case TOGGLE_PROJECT_MENU_OPEN:
+      console.log(" in reducer ");
+      return { ...state, isProjectMenuOpen: !state.isProjectMenuOpen };
   }
   return state;
 }

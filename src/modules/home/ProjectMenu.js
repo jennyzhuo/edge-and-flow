@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { aboutToPreview, aboutToAbout } from "../transitions"
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import * as actions from './actions';
 
 @connect(state => ({
   ...state.homeReducer
+}), dispatch => ({
+  actions: bindActionCreators(actions, dispatch)
+  // setProjectMenuOpen: (isOpen) => dispatch(setProjectMenuOpen(isOpen))
 }))
 class ProjectMenu extends Component {
 
@@ -15,18 +20,28 @@ class ProjectMenu extends Component {
             isHidden: true,
             // animate: false,
         };
+
+        this.showMenu = this.showMenu.bind(this);
     }
 
-    showMenu = () => {
-      this.setState({ isHidden: !this.state.isHidden });
+    showMenu() {
+      // this.setState({ isHidden: !this.state.isHidden });
         // this.setState({ animate: !this.state.animate });
+      // debugger;
+
+      const { dispatch, actions } = this.props;
+      console.log('hi');
+      console.log("actions = ", actions);
+
+      this.props.actions.setProjectMenuOpen()
     }
 
   render () {
-
+    const { isProjectMenuOpen } = this.props;
     console.log("isProjectMenuOpen = ", this.props.isProjectMenuOpen);
     // let animateClass = this.state.animate ? 'slide-bottom' : '';
-    const animateClass = !this.state.isHidden ? 'slide-bottom' : '';
+    // const animateClass = !this.state.isHidden ? 'slide-bottom' : '';
+    const animateClass = isProjectMenuOpen ? 'slide-bottom' : '';
 
     return (
       <div className="d-flex align-items-end">
@@ -34,11 +49,14 @@ class ProjectMenu extends Component {
           <div className="right-side projects ml-5 pl-5">
             <div className="pl-5">
               <h3 className="menu pb-3"
-                onClick={this.showMenu}>
+                onClick={() => {
+                  console.log("clicking onclick");
+                  this.showMenu()
+                }}>
                 + RECENT WORK
               </h3>
 
-              {!this.state.isHidden &&
+              {isProjectMenuOpen &&
 
                 <div className="pt-5 btn-group-vertical btn-group-sm" role="group">
                   <Link to={{ pathname: `/preview/dynamo`, state: aboutToPreview }}>
