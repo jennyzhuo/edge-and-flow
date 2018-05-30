@@ -23,3 +23,4 @@ export default () => (
   ]
 )
 
+export { default as homeReducer } from './reducer';

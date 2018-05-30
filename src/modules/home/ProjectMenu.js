@@ -1,28 +1,32 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 import { aboutToPreview, aboutToAbout } from "../transitions"
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
+@connect(state => ({
+  ...state.homeReducer
+}))
 class ProjectMenu extends Component {
 
   constructor(props) {
         super(props);
         this.state = {         
             isHidden: true,
-            animate: false,          
+            // animate: false,
         };
-
-        this.showMenu = this.showMenu.bind(this);
     }
 
-    showMenu() {
-        this.setState({ isHidden: !this.state.isHidden });
-        this.setState({ animate: !this.state.animate });
+    showMenu = () => {
+      this.setState({ isHidden: !this.state.isHidden });
+        // this.setState({ animate: !this.state.animate });
     }
 
   render () {
 
-    let animateClass = this.state.animate ? 'slide-bottom' : '';
+    console.log("isProjectMenuOpen = ", this.props.isProjectMenuOpen);
+    // let animateClass = this.state.animate ? 'slide-bottom' : '';
+    const animateClass = !this.state.isHidden ? 'slide-bottom' : '';
 
     return (
       <div className="d-flex align-items-end">

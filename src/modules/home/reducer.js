@@ -6,17 +6,12 @@
 
 // Read more on Reducers - https://redux.js.org/docs/basics/Reducers.html
 
-import { INCREMENT_NUM, DECREMENT_NUM, RESET } from "../constants/ActionTypes";
+import { SET_PROJECT_MENU_OPEN } from './constants'
 
-export default function reducer(state = 0, action) {
+export default function reducer(state = { isProjectMenuOpen: false }, action) {
   switch (action.type) {
-    case INCREMENT_NUM:
-      return state + 1;
-    case DECREMENT_NUM:
-      return state - 1;
-    case RESET:
-      return state = action.payload;
+    case SET_PROJECT_MENU_OPEN:
+      return { isProjectMenuOpen: action.data, ...state };
   }
-
   return state;
 }
