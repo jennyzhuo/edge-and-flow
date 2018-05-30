@@ -65,8 +65,11 @@
 	top: 200px;
 	left: 35%;
 
-	img {
-		max-height: 53vh;
+	@media all and (max-width: 1199px) { 
+
+		img {
+			max-height: 500px;
+		}
 	}
 }
 
@@ -80,8 +83,6 @@
 	font-size: 12px;
 	letter-spacing: 3px;
 	text-align: left;
-
-
 }
 	
 .btn:focus, .btn:active:focus, .btn.active:focus {

@@ -16,12 +16,14 @@ export default () => (
         <img src={iphone} alt="iphone"/>
       </div>
 
-      <div className="dynamo-preview p-5">
+      <div className="preview dynamo py-5 pl-5">
         <div className="p-4">
-          <h2 className="number pb-2">01</h2>
-          <h2 className="pt-4 pb-2">DYNAMO</h2>
-          <h4 className="pb-5">BRANDING // UI-UX DESIGN</h4>
-          <p className="intro py-5">
+          <h2 className="number pb-2 title">01</h2>
+          <h2 className="pt-4 pb-2 title">
+            DYNAMO
+          </h2>
+          <h4 className="pb-5 subtitle">BRANDING // UI-UX DESIGN</h4>
+          <p className="intro py-5 body">
             One of my largest undertakings to date - rebranding and building up presence
             for Dynamo. Completely transforming not only the logo but modernizing the
             brand identity as whole. Long term project that went through many stages,
