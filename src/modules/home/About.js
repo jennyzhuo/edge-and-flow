@@ -6,7 +6,7 @@ import Skills from "./skills";
 import NavBar from "./NavBar";
 import { Route } from 'react-router-dom'
 
-export default ({ match }) => (
+export default ({ match, location }) => (
 	<div className="d-flex align-items-end">
 	    <div className="d-flex justify-content-center">
 			<div className="left-side home">
@@ -14,7 +14,7 @@ export default ({ match }) => (
 				<Route path={`${match.url}/personal`} component={Personal} />
 				<Route path={`${match.url}/interests`} component={Skills} />
 				<Route path={`${match.url}/connect`} component={Connect} />
-				<NavBar />
+				<NavBar location={location} />
 			</div>
 		</div>
 	</div>
