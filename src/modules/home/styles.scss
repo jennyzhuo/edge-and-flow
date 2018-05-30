@@ -4,5 +4,27 @@
     position: fixed;
     top: 50%;
   }
+
+  .menu {
+    .btn-secondary:active, .btn-secondary.active, .btn-secondary.active:hover {
+      border-color: #FD4C4C;
+      background-color: #FD4C4C;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #FD4C4C;
+      background-color: white;
+      color: #4d4d5d;
+    }
+
+
+    .btn-secondary:focus {
+      border-color: #FD4C4C;
+      background-color: #FD4C4C;
+      box-shadow: none !important;
+      color: #fff;
+    }
+  }
 }
 
