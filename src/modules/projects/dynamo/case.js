@@ -3,9 +3,17 @@ import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
 import iphone2 from "../../../../assets/images/01-case-iphone.png";
 import branding from "../../../../assets/images/01-case-brand.png";
+import { Link } from 'react-router-dom';
+import { caseToPreview } from '../../transitions';
 
 export default () => (
   <div className="case dynamo">
+    <Link to={{ pathname: '/preview/dynamo', state: caseToPreview }}>
+      <div className="d-flex align-items-center">
+        <div className="h-bar"></div>
+        <h3 className="px-3">BACK</h3>
+      </div>
+    </Link>
     <div className="d-flex flex-row">
 
       <div className="header d-flex align-items-center">
