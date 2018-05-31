@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { aboutToPreview, aboutToAbout } from "../transitions"
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import * as actions from './actions';
+import * as ROUTES from '../../routes';
 
 @connect(state => ({
   ...state.homeReducer
@@ -59,16 +60,16 @@ class ProjectMenu extends Component {
               {isProjectMenuOpen &&
 
                 <div className="pt-5 btn-group-vertical btn-group-sm" role="group">
-                  <Link to={{ pathname: `/preview/dynamo`, state: aboutToPreview }}>
+                  <Link to={{ pathname: ROUTES.DYNAMO_PREVIEW, state: aboutToPreview }}>
                     <button type="button" className={`one ${animateClass} btn`}><strong>01  </strong>DYNAMO</button>
                   </Link>
-                  <Link to={{ pathname: `/preview/captis`, state: aboutToPreview }}>
+                  <Link to={{ pathname: ROUTES.CAPTIS_PREVIEW, state: aboutToPreview }}>
                     <button type="button" className={`two ${animateClass} btn`}><strong>02  </strong>CAPTIS</button>
                   </Link>
-                  <Link to={{ pathname: `/preview/burris`, state: aboutToPreview }}>
+                  <Link to={{ pathname: ROUTES.BURRIS_PREVIEW, state: aboutToPreview }}>
                     <button type="button" className={`three ${animateClass} btn`}><strong>03  </strong>BURRIS</button>
                   </Link>
-                  <Link to={{ pathname: `/preview/hackathon`, state: aboutToPreview }}>
+                  <Link to={{ pathname: ROUTES.HACKATHON_PREVIEW, state: aboutToPreview }}>
                     <button type="button" className={`four ${animateClass} btn`}><strong>04  </strong>HACKATHON</button>
                   </Link>
                   <Link to={{ pathname: `/other`, state: aboutToPreview }}>

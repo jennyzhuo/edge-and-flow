@@ -12,7 +12,7 @@ export default ({ match, location }) => (
   <div className="d-flex align-items-end">
     <div className="d-flex justify-content-center">
       <div className="left-side home">
-        <Route exact path={ROUTES.INTRO} component={Intro} />
+        <Route path={ROUTES.INTRO} component={Intro} />
         <Route path={ROUTES.PERSONAL} component={Personal} />
         <Route path={ROUTES.INTERESTS} component={Skills} />
         <Route path={ROUTES.CONNECT} component={Connect} />

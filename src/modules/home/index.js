@@ -11,15 +11,16 @@ import { withRouter } from 'react-router';
 import Preview from './preview';
 import * as ROUTES from '../../routes';
 
-export default withRouter(({ location }) => {
+export default ({ location, match }) => {
 
-  // console.log("props = ", props);
+  console.log("location = ", location);
+  console.log("match = ", match);
 
   return (
   [
     <Route render={({ location }) => (
       <Switch location={location}>
-        <Route path={ROUTES.HOME} component={About} />
+        <Route path={ROUTES.ABOUT} component={About} />
         <Route path={ROUTES.PREVIEW} component={Preview} />
       </Switch>
     )}/>,
@@ -27,6 +28,6 @@ export default withRouter(({ location }) => {
       <ProjectMenu />
     </UpdateBlocker>
   ]
-)})
+)}
 
 export { default as homeReducer } from './reducer';

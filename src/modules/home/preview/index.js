@@ -4,13 +4,13 @@ import DynamoPreview from "../../projects/dynamo/index";
 import CaptisPreview from "../../projects/captis/index";
 import BurrisPreview from "../../projects/burris/index";
 import HackathonPreview from "../../projects/hackathon/index";
-
+import * as ROUTES from '../../../routes';
 
 export default ({ match, location }) => (
 [
-        <Route exact path='/preview/dynamo' component={DynamoPreview} />,
-        <Route exact path='/preview/captis' component={CaptisPreview} />,
-        <Route exact path='/preview/burris' component={BurrisPreview} />,
-        <Route exact path='/preview/hackathon' component={HackathonPreview} />,
+    <Route exact path={ROUTES.DYNAMO_PREVIEW} component={DynamoPreview} />,
+    <Route exact path={ROUTES.CAPTIS_PREVIEW} component={CaptisPreview} />,
+    <Route exact path={ROUTES.BURRIS_PREVIEW} component={BurrisPreview} />,
+    <Route exact path={ROUTES.HACKATHON_PREVIEW} component={HackathonPreview} />,
 ]
 )
