@@ -8,16 +8,16 @@ export default ({ location }) => {
     <div className="menu mt-5 pt-5">
       <div className="btn-group btn-group-sm" role="group">
         <Link to={{pathname: ROUTES.INTRO, state: aboutToAbout}}>
-          <button type="button" className={`btn btn-secondary ${location.pathname === '/home' && 'active'} px-3`}>01 HOME</button>
+          <button type="button" className={`btn btn-secondary ${location.pathname === ROUTES.INTRO && 'active'} px-3`}>01 HOME</button>
         </Link>
         <Link to={{pathname: ROUTES.PERSONAL, state: aboutToAbout}}>
-          <button type="button" className={`btn btn-secondary ${location.pathname === '/home/personal' && 'active'} px-3`}>02 PERSONAL</button>
+          <button type="button" className={`btn btn-secondary ${location.pathname === ROUTES.PERSONAL && 'active'} px-3`}>02 PERSONAL</button>
         </Link>
         <Link to={{pathname: ROUTES.INTERESTS, state: aboutToAbout}}>
-          <button type="button" className={`btn btn-secondary ${location.pathname === '/home/interests' && 'active'} px-3`}>03 INTERESTS</button>
+          <button type="button" className={`btn btn-secondary ${location.pathname === ROUTES.INTERESTS && 'active'} px-3`}>03 INTERESTS</button>
         </Link>
         <Link to={{pathname: ROUTES.CONNECT, state: aboutToAbout}}>
-          <button type="button" className={`btn btn-secondary ${location.pathname === '/home/connect' && 'active'} px-3`}>04 CONNECT</button>
+          <button type="button" className={`btn btn-secondary ${location.pathname === ROUTES.CONNECT && 'active'} px-3`}>04 CONNECT</button>
         </Link>
       </div>
     </div>
