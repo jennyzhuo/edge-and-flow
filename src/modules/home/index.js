@@ -10,19 +10,26 @@ import UpdateBlocker from '../../components/UpdateBlocker';
 import { withRouter } from 'react-router';
 import Preview from './preview';
 import * as ROUTES from '../../routes';
+import Transitions from '../transitions';
 
 export default ({ location, match }) => {
 
   console.log("location = ", location);
   console.log("match = ", match);
 
+  const key = location.pathname.split("/")[2];
+  console.log("key = ", key);
+
   return (
   [
     <Route render={({ location }) => (
-      <Switch location={location}>
-        <Route path={ROUTES.ABOUT} component={About} />
-        <Route path={ROUTES.PREVIEW} component={Preview} />
-      </Switch>
+      <Transitions pageKey={key} {...location.state}>
+        <Switch location={location}>
+          <Route path={ROUTES.ABOUT} component={About} />
+          <Route path={ROUTES.PREVIEW} component={Preview} />
+        </Switch>
+      </Transitions>
+
     )}/>,
     <UpdateBlocker>
       <ProjectMenu />
