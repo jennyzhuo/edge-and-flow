@@ -10,13 +10,13 @@ import * as ROUTES from '../../../routes';
 import Transitions from '../../transitions';
 
 export default ({ match, location }) => (
-	<div className="d-flex align-items-end">
+	<div className="d-flex align-items-end about">
 		<div className="d-flex justify-content-center">
 			<div className="left-side home">
 				<Route render={({ location }) => {
           const key = location.pathname.split("/")[3] || '/intro';
           return (
-					<Transitions pageKey={key} {...location.state}>
+					<Transitions pageKey={key} transitionGroupClass={'about-transition-group'} cssTransitionClass={'about-css-transition'} {...location.state}>
 						<Route path={ROUTES.INTRO} component={Intro} />
 						<Route path={ROUTES.PERSONAL} component={Personal} />
 						<Route path={ROUTES.INTERESTS} component={Skills} />

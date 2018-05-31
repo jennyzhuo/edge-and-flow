@@ -28,16 +28,19 @@ class Transition extends Component {
 
   render() {
 
-    const { transition = '', duration = 0, pageKey, children } = this.props;
+    const { transition = '', duration = 0, pageKey, children, transitionGroupClass, cssTransitionClass } = this.props;
 
     return (
       <TransitionGroup
         childFactory={childFactoryCreator({ classNames: transition, timeout: duration })}
+        className={transitionGroupClass}
       >
-        <CSSTransition key={pageKey}>
+        <CSSTransition key={pageKey} className={cssTransitionClass}>
           {/* you should wrap CSSTransition child in a div in case it could be null
       see https://github.com/reactjs/react-transition-group/issues/208 */}
-          <div>{ children }</div>
+          <div>
+            { children }
+            </div>
         </CSSTransition>
       </TransitionGroup>
     )

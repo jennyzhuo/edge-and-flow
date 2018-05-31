@@ -23,7 +23,7 @@ class App extends Component {
           return (
           <Transitions pageKey={key} {...location.state}>
             <div className="container d-flex">
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center app">
                 <Switch location={location}>
                   <Route path={ROUTES.HOME} component={Home} />
                   <Route path='/case/dynamo' component={DynamoCase} />
