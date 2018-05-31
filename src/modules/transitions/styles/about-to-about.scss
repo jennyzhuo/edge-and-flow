@@ -1,10 +1,18 @@
+@import 'animations';
+
 .about-to-about-enter {
   position: absolute;
 
   .content {
-    opacity: 0.01;
+    opacity: 1;
+    z-index: 2;
   }
 
+  .home {
+    .menu {
+      opacity: 1;
+    }
+  }
 }
 
 .about-to-about-enter.about-to-about-enter-active {
@@ -12,42 +20,42 @@
 
   .content {
     opacity: 1;
-    transition: opacity 1000ms ease-in;
+    transition: all 1000ms ease-in;
+  }
+
+  .home {
+    .menu {
+      transition: all 10ms ease-in;
+    }
   }
 }
 
 .about-to-about-exit {
   position: absolute;
 
-  //.content {
-  //  opacity: 1;
-  //}
+  .content {
+    opacity: 1;
+    z-index: 1
+  }
+
+  .home {
+    .menu {
+      opacity: 0;
+    }
+  }
 }
 
 .about-to-about-exit.about-to-about-exit-active {
   position: absolute;
-  display: none;
-  //.content {
-  //  opacity: 0.01;
-  //  transition: opacity 3000ms ease-in;
-  //}
-}
 
-//.about-to-about-enter {
-//  opacity: 1;
-//  z-index: 2;
-//  position: relative;
-//}
-//
-//.about-to-about-enter.about-to-about-enter-active {
-//  opacity: 1;
-//  transition: all 1000ms ease-in;
-//}
-//
-//.about-to-about-exit {
-//  opacity: 1;
-//  transition: opacity 1000ms ease-in;
-//  z-index: 1;
-//  position: relative;
-//  top: -1000px;
-//}
+  .content {
+    opacity: 1;
+    animation: slide-out-top 1000ms ease-in both;
+  }
+
+  .home {
+    .menu {
+      transition: all 10ms ease-in;
+    }
+  }
+}

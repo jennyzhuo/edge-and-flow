@@ -1,43 +1,52 @@
+@import 'animations';
+
 .about-to-preview-enter {
   position:absolute;
   .home {
     opacity: 1;
   }
   .preview {
-    opacity: 0.01;
+    opacity: 0;
+
   }
 }
 
 .about-to-preview-enter.about-to-preview-enter-active {
   position:absolute;
   .home {
-    opacity: 0.01;
-    transition: opacity 3000ms ease-in;
+    opacity: 1
   }
+
   .preview {
+    z-index: 2;
     opacity: 1;
-    transition: opacity 3000ms ease-in;
+    animation: slide-in-bottom 1000ms ease-in both;
+  }
+
+  .iphone {
+    z-index: 3;
   }
 }
 
 .about-to-preview-exit {
   position:absolute;
   .home {
-    opacity: 0.01;
+    opacity: 0;
   }
   .preview {
     opacity: 1;
   }
 }
 
-.about-to-preview-exit.about-to-preview-enter-exit {
+.about-to-preview-exit.about-to-preview-exit-active {
   position:absolute;
+
   .home {
     opacity: 1;
-    transition: opacity 3000ms ease-in;
   }
+
   .preview {
-    opacity: 0.01;
-    transition: opacity 3000ms ease-in;
+    z-index: 2;
+    opacity: 1;
   }
 }

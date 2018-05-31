@@ -1,4 +1,13 @@
 .dynamo {
+	padding-top: 75px;
+
+	.h-bar {
+			position: relative;
+			background: #D4DFE8;
+			height: 2px;
+			width: 70px;
+	}
+
 	.section {
 
 		&.gray {

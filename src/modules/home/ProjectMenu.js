@@ -47,7 +47,7 @@ class ProjectMenu extends Component {
     return (
       <div className="d-flex align-items-end">
         <div className="d-flex justify-content-center">
-          <div className="right-side projects ml-5 pl-5">
+          <div className="right-side projects">
             <div className="pl-5">
               <h3 className="menu pb-3"
                 onClick={() => {
