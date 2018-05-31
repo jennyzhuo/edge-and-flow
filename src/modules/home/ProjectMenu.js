@@ -75,7 +75,7 @@ class ProjectMenu extends Component {
                   <Link to={{ pathname: `/other`, state: aboutToPreview }}>
                     <button type="button" className={`five ${animateClass} btn`}><strong>05  </strong>OTHER</button>
                   </Link>
-                  <Link to={{ pathname: `/home`, state: aboutToPreview }}>
+                  <Link to={{ pathname: ROUTES.INTRO, state: aboutToPreview }}>
                     <button type="button" className={`six ${animateClass} btn`}><strong>←  </strong>BACK</button>
                   </Link>
                 </div>

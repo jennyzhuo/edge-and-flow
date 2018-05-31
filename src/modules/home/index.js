@@ -6,7 +6,6 @@ import DynamoPreview from "../projects/dynamo/index";
 import CaptisPreview from "../projects/captis/index";
 import BurrisPreview from "../projects/burris/index";
 import HackathonPreview from "../projects/hackathon/index";
-import UpdateBlocker from '../../components/UpdateBlocker';
 import { withRouter } from 'react-router';
 import Preview from './preview';
 import * as ROUTES from '../../routes';
@@ -17,7 +16,7 @@ export default ({ location, match }) => {
   console.log("location = ", location);
   console.log("match = ", match);
 
-  const key = location.pathname.split("/")[2];
+  const key = location.pathname.split("/")[2] || '/about';
   console.log("key = ", key);
 
   return (
@@ -31,9 +30,7 @@ export default ({ location, match }) => {
       </Transitions>
 
     )}/>,
-    <UpdateBlocker>
-      <ProjectMenu />
-    </UpdateBlocker>
+    <ProjectMenu />
   ]
 )}
 
