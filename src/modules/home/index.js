@@ -8,6 +8,8 @@ import BurrisPreview from "../projects/burris/index";
 import HackathonPreview from "../projects/hackathon/index";
 import UpdateBlocker from '../../components/UpdateBlocker';
 import { withRouter } from 'react-router';
+import Preview from './preview';
+import * as ROUTES from '../../routes';
 
 export default withRouter(({ location }) => {
 
@@ -17,11 +19,8 @@ export default withRouter(({ location }) => {
   [
     <Route render={({ location }) => (
       <Switch location={location}>
-        <Route path='/home' component={About} />
-        <Route exact path='/preview/dynamo' component={DynamoPreview} />
-        <Route exact path='/preview/captis' component={CaptisPreview} />
-        <Route exact path='/preview/burris' component={BurrisPreview} />
-        <Route exact path='/preview/hackathon' component={HackathonPreview} />
+        <Route path={ROUTES.HOME} component={About} />
+        <Route path={ROUTES.PREVIEW} component={Preview} />
       </Switch>
     )}/>,
     <UpdateBlocker>
