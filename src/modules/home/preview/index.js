@@ -14,7 +14,7 @@ export default ({ match, location }) => (
       console.log("preview key = ", key);
 
       return (
-          <Transitions pathKey={key} {...location.state}>
+          <Transitions pathKey={key} transitionGroupClass={'preview-transition-group'} cssTransitionClass={'preview-css-transition'} {...location.state}>
             <Switch location={location}>
               <Route exact path={ROUTES.DYNAMO_PREVIEW} component={DynamoPreview} />
               <Route exact path={ROUTES.CAPTIS_PREVIEW} component={CaptisPreview} />

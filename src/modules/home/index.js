@@ -22,7 +22,7 @@ export default ({ location, match }) => {
   return (
   [
     <Route render={({ location }) => (
-      <Transitions pageKey={key} {...location.state}>
+      <Transitions pageKey={key} transitionGroupClass={'home-transition-group'} cssTransitionClass={'home-css-transition'} {...location.state}>
         <Switch location={location}>
           <Route path={ROUTES.ABOUT} component={About} />
           <Route path={ROUTES.PREVIEW} component={Preview} />
