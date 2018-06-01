@@ -7,12 +7,9 @@ import HackathonPreview from "../../projects/hackathon/index";
 import * as ROUTES from '../../../routes';
 import Transitions from '../../transitions';
 
-export default ({ match, location }) => (
-
+export default () => (
     <Route render={({ location }) => {
       const key = location.pathname.split("/")[3] || '/dynamo';
-      // console.log("preview key = ", key);
-
       return (
           <Transitions pathKey={key} transitionGroupClass={'preview-transition-group'} cssTransitionClass={'preview-css-transition'} {...location.state}>
             <Switch location={location}>

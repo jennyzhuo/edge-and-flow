@@ -12,14 +12,10 @@ const history = createHistory()
 class App extends Component {
 
   render() {
-
     return (
-
       <Router history={history}>
         <Route render={({ location }) => {
-          // console.log("location = ", location);
           const key = location.pathname.split("/")[1] || '/';
-
           return (
           <Transitions pageKey={key} {...location.state}>
             <div className="container d-flex">
@@ -35,7 +31,6 @@ class App extends Component {
           )}}
         />
       </Router>
-
     );
   }
 }
