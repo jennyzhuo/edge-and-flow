@@ -29,7 +29,23 @@ TODO:
 - Implement Routes and Switches in App.js
     1) Home -> Intro / Preview + NavBar
     2) Case
+- persistent project menu option selected
 
 
 Questions:
 - on position: absolute animations, why is there an offset from the top?
+
+
+consistent project menu (possibly navbar)
+- UpdateBlocker (pure component) class around navbar and menu
+- change routes for navbar to use url param
+- what is location.key? can it be set to something else?
+- do we know if location.key determines a new transition?
+- how do regular css transitions work
+
+plan:
+- have multiple
+
+https://codesandbox.io/s/W7R5BKzzX
+https://hackernoon.com/animated-page-transitions-with-react-router-4-reacttransitiongroup-and-animated-1ca17bd97a1a
+https://codesandbox.io/s/4RAqrkRkn?view=preview

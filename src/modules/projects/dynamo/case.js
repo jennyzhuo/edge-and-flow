@@ -3,9 +3,17 @@ import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
 import iphone2 from "../../../../assets/images/01-case-iphone.png";
 import branding from "../../../../assets/images/01-case-brand.png";
+import { Link } from 'react-router-dom';
+import { caseToPreview } from '../../transitions';
 
 export default () => (
   <div className="case dynamo">
+    <Link to={{ pathname: '/preview/dynamo', state: caseToPreview }}>
+      <div className="d-flex align-items-center">
+        <div className="h-bar"></div>
+        <h3 className="px-3">BACK</h3>
+      </div>
+    </Link>
     <div className="d-flex flex-row">
 
       <div className="header d-flex align-items-center">
@@ -16,12 +24,14 @@ export default () => (
         <img src={iphone} alt="iphone"/>
       </div>
 
-      <div className="dynamo-preview p-5">
+      <div className="preview dynamo py-5 pl-5">
         <div className="p-4">
-          <h2 className="number pb-2">01</h2>
-          <h2 className="pt-4 pb-2">DYNAMO</h2>
-          <h4 className="pb-5">BRANDING // UI-UX DESIGN</h4>
-          <p className="intro py-5">
+          <h2 className="number pb-2 title">01</h2>
+          <h2 className="pt-4 pb-2 title">
+            DYNAMO
+          </h2>
+          <h4 className="pb-5 subtitle">BRANDING // UI-UX DESIGN</h4>
+          <p className="intro py-5 body">
             One of my largest undertakings to date - rebranding and building up presence
             for Dynamo. Completely transforming not only the logo but modernizing the
             brand identity as whole. Long term project that went through many stages,
