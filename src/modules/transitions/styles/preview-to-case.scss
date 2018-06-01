@@ -1,0 +1,106 @@
+@import 'animations';
+
+.preview-to-case-enter {
+  position:absolute;
+
+  .card {
+    opacity: 1;
+  }
+
+  .case {
+    opacity: 0;
+  }
+
+  .projects {
+    opacity: 0;
+  }
+
+  .iphone {
+    z-index: 3;
+  }
+}
+
+.preview-to-case-enter.preview-to-case-enter-active {
+  position:absolute;
+
+  .card {
+    opacity: 1;
+  }
+
+  .case {
+    opacity: 1;
+    animation: opacity 1000ms ease-in 1000ms both;
+
+    .preview {
+      opacity: 1;
+
+      .title {
+        animation: slide-in-right 1000ms ease-in 1000ms both;
+      }
+
+      .subtitle {
+        animation: slide-in-right 1000ms ease-in 1150ms both;
+      }
+
+      .body {
+        animation: slide-in-right 1000ms ease-in 1250ms both;
+      }
+      
+    }
+  }
+
+  .header {
+    animation: slide-in-left 1000ms ease-in 1000ms both;
+  }
+
+  .projects {
+    opacity: 0;
+  }
+}
+
+.preview-to-case-exit {
+  position:absolute;
+
+  .card {
+    opacity: 1;
+  }
+
+  .case {
+    opacity: 1;
+
+    .preview {
+      opacity: 0;
+    }
+  }
+
+  .projects {
+    opacity: 0;
+  }
+
+  .iphone {
+    z-index: -1;
+  }
+}
+
+.preview-to-case-exit.preview-to-case-exit-active {
+  position:absolute;
+
+  .card {
+    opacity: 1;
+    animation: slide-out-top 1000ms ease-in both;
+  }
+
+  .case {
+    opacity: 1;
+  }
+
+  .iphone {
+    animation: opacity 1000ms ease-in 10ms both;
+  }
+
+  .projects {
+    opacity: 0;
+  }
+}
+
+

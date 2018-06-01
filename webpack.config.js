@@ -10,8 +10,8 @@ module.exports = {
     "./src/main.scss"
   ],
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "./public/dist"),
+    filename: "index.bundle.js",
+    path: path.resolve(__dirname, "dist"),
     publicPath: '/'
   },
   module: {
@@ -51,7 +51,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: "./public/",
+    contentBase: "./dist",
     watchContentBase: true,
     historyApiFallback: true
   },

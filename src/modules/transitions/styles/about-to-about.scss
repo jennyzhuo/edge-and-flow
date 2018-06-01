@@ -1,0 +1,37 @@
+@import 'animations';
+
+.about-to-about-enter {
+  position: relative;
+
+  .content {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.about-to-about-enter.about-to-about-enter-active {
+  position: relative;
+
+  .content {
+    opacity: 1;
+    transition: all 1000ms ease-in;
+  }
+}
+
+.about-to-about-exit {
+  position: absolute;
+
+  .content {
+    z-index: 2;
+    width: 40vw;
+  }
+}
+
+.about-to-about-exit.about-to-about-exit-active {
+  position: absolute;
+
+  .content {
+    animation: slide-out-top 1000ms ease-in both;
+    width: 40vw;
+  }
+}

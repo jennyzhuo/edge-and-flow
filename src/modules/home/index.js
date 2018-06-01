@@ -1,19 +1,28 @@
 import React from "react";
-import NavBar from './NavBar';
-import Intro from './intro';
-import Personal from './personal';
-import Skills from './skills';
-import Connect from './connect';
+import ProjectMenu from './ProjectMenu';
+import About from './about/index';
+import { Route, Switch } from 'react-router-dom';
+import Preview from './preview';
+import * as ROUTES from '../../routes';
+import Transitions from '../transitions';
 
-import { Route } from 'react-router-dom'
+export default ({ location }) => {
 
-export default ({ history, match }) => (
-  <div className="left-side home p-5">
-		<Route path={`${match.url}`} component={Intro} />
-    <Route path={`${match.url}/personal`} component={Personal} />
-    <Route path={`${match.url}/interests`} component={Skills} />
-    <Route path={`${match.url}/connect`} component={Connect} />
-    <NavBar />
-  </div>
-)
+  const key = location.pathname.split("/")[2] || '/about';
 
+  return (
+  [
+    <Route render={({ location }) => (
+      <Transitions pageKey={key} transitionGroupClass={'home-transition-group'} cssTransitionClass={'home-css-transition'} {...location.state}>
+        <Switch location={location}>
+          <Route path={ROUTES.ABOUT} component={About} />
+          <Route path={ROUTES.PREVIEW} component={Preview} />
+        </Switch>
+      </Transitions>
+
+    )}/>,
+    <ProjectMenu />
+  ]
+)}
+
+export { default as homeReducer } from './reducer';
