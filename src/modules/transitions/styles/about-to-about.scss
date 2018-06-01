@@ -34,7 +34,8 @@
   position: absolute;
 
   .content {
-    z-index: 2
+    z-index: 2;
+    width: 40vw;
   }
 
   //.home {
@@ -49,6 +50,7 @@
 
   .content {
     animation: slide-out-top 1000ms ease-in both;
+    width: 40vw;
   }
 
   //.home {
