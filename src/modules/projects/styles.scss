@@ -63,12 +63,22 @@
 .iphone {
 	position: absolute;
 	top: 200px;
-	left: 35%;
 
-	@media all and (max-width: 1199px) { 
+	@media all and (max-width: 1440px) {
+		left: 40vw;
 
 		img {
 			max-height: 500px;
+			
+		}
+	}
+
+	@media all and (max-width: 1199px) { 
+		left: 35vw;
+		
+		img {
+			max-height: 500px;
+			
 		}
 	}
 }

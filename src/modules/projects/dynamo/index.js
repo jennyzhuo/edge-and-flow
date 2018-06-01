@@ -25,7 +25,7 @@ export default () => (
     			</Link>
         </div>
       </div>
-      <div className="iphone slide-in-bottom">
+      <div className="iphone">
         <img src={iphone} alt="iphone"/>
       </div>
     </div>

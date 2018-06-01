@@ -3,8 +3,10 @@
 .preview-to-case-enter {
   position:absolute;
 
-  .card {
-    opacity: 1;
+  .preview {
+    .card {
+      opacity: 1;
+    } 
   }
 
   .case {
@@ -23,8 +25,10 @@
 .preview-to-case-enter.preview-to-case-enter-active {
   position:absolute;
 
-  .card {
-    opacity: 1;
+  .preview {
+    .card {
+      opacity: 1;
+    } 
   }
 
   .case {
@@ -61,9 +65,12 @@
 .preview-to-case-exit {
   position:absolute;
 
-  .card {
-    opacity: 1;
+  .preview {
+    .card {
+      opacity: 1;
+    } 
   }
+
 
   .case {
     opacity: 1;
@@ -84,11 +91,13 @@
 
 .preview-to-case-exit.preview-to-case-exit-active {
   position:absolute;
-
-  .card {
-    opacity: 1;
-    animation: slide-out-top 1000ms ease-in both;
+  .preview {
+    .card {
+      opacity: 1;
+      animation: slide-out-top 1000ms ease-in both;
+    }
   }
+  
 
   .case {
     opacity: 1;
