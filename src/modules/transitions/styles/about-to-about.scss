@@ -1,71 +1,37 @@
 @import 'animations';
 
 .about-to-about-enter {
-  position: absolute;
+  position: relative;
 
-  .about-transition-group {
+  .content {
     opacity: 1;
     z-index: 2;
-    width: 50vw;
-  }
-
-  .home {
-    .menu {
-      position: absolute;
-      opacity: 1;
-    }
   }
 }
 
 .about-to-about-enter.about-to-about-enter-active {
-  position: absolute;
+  position: relative;
 
-  .about-transition-group {
+  .content {
     opacity: 1;
     transition: all 1000ms ease-in;
-    width: 50vw;
-
-  }
-
-  .home {
-    .menu {
-      transition: all 10ms ease-in;
-      position: absolute;
-    }
   }
 }
 
 .about-to-about-exit {
   position: absolute;
 
-  .about-transition-group {
-    opacity: 1;
-    z-index: 1;
-    width: 50vw;
-
-  }
-
-  .home {
-    .menu {
-      opacity: 0;
-      position: absolute;
-    }
+  .content {
+    z-index: 2;
+    width: 40vw;
   }
 }
 
 .about-to-about-exit.about-to-about-exit-active {
   position: absolute;
 
-  .about-transition-group {
-    opacity: 1;
+  .content {
     animation: slide-out-top 1000ms ease-in both;
-    width: 50vw;
-  }
-
-  .home {
-    .menu {
-      transition: all 10ms ease-in;
-      position: absolute;
-    }
+    width: 40vw;
   }
 }

@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { aboutToPreview, aboutToAbout } from "../transitions"
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { aboutToPreview } from "../transitions"
 import * as actions from './actions';
 import * as ROUTES from '../../routes';
 
@@ -11,7 +10,6 @@ import * as ROUTES from '../../routes';
   ...state.homeReducer
 }), dispatch => ({
   actions: bindActionCreators(actions, dispatch)
-  // setProjectMenuOpen: (isOpen) => dispatch(setProjectMenuOpen(isOpen))
 }))
 class ProjectMenu extends Component {
 
@@ -19,29 +17,17 @@ class ProjectMenu extends Component {
         super(props);
         this.state = {         
             isHidden: true,
-            // animate: false,
         };
 
         this.showMenu = this.showMenu.bind(this);
     }
 
     showMenu() {
-      // this.setState({ isHidden: !this.state.isHidden });
-        // this.setState({ animate: !this.state.animate });
-      // debugger;
-
-      const { dispatch, actions } = this.props;
-      console.log('hi');
-      console.log("actions = ", actions);
-
       this.props.actions.setProjectMenuOpen()
     }
 
   render () {
     const { isProjectMenuOpen } = this.props;
-    console.log("isProjectMenuOpen = ", this.props.isProjectMenuOpen);
-    // let animateClass = this.state.animate ? 'slide-bottom' : '';
-    // const animateClass = !this.state.isHidden ? 'slide-bottom' : '';
     const animateClass = isProjectMenuOpen ? 'slide-bottom' : '';
 
     return (
@@ -50,10 +36,7 @@ class ProjectMenu extends Component {
           <div className="right-side projects">
             <div className="pl-5">
               <h3 className="menu pb-3"
-                onClick={() => {
-                  console.log("clicking onclick");
-                  this.showMenu()
-                }}>
+                onClick={() => {this.showMenu()}}>
                 + RECENT WORK
               </h3>
 

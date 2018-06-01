@@ -1,30 +1,33 @@
 @import 'animations';
 
 .about-to-preview-enter {
-  position:absolute;
+  position:relative;
   .home {
     opacity: 1;
   }
   .preview {
     opacity: 0;
+  }
 
+  .iphone {
+    z-index: 3;
+    left: 35vw;
   }
 }
 
 .about-to-preview-enter.about-to-preview-enter-active {
-  position:absolute;
+  position:relative;
   .home {
     opacity: 1
   }
-
   .preview {
     z-index: 2;
     opacity: 1;
     animation: slide-in-bottom 1000ms ease-in both;
   }
-
   .iphone {
     z-index: 3;
+    left: 35vw;
   }
 }
 
@@ -40,11 +43,9 @@
 
 .about-to-preview-exit.about-to-preview-exit-active {
   position:absolute;
-
   .home {
     opacity: 1;
   }
-
   .preview {
     z-index: 2;
     opacity: 1;
