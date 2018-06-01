@@ -14,11 +14,11 @@ export default () => (
           </h2>
           <h4 className="pb-5 slide-in-left subtitle">BRANDING // UI-UX DESIGN</h4>
           <p className="intro py-5 slide-in-left body">
-            One of my largest undertakings to date - rebranding and building up presence
-            for Dynamo. Completely transforming not only the logo but modernizing the
-            brand identity as whole. Long term project that went through many stages,
-            iterations, and production timelines. We set out to captivate our audience
-            and invigorate our Dynamo family by showcasing spark and evoking energy.
+            A blockchain solution designed for the Expedition Hacks Human Trafficking Solutions Event.
+            Human trafficking is a global enterprise that is second only to drug trafficking as the 
+            most profitable criminal business. This database utilizes biometric encryption to help 
+            countries' governments and law enforcement agencies to document and quickly identify 
+            victims that have been found.
           </p>
           <Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
             <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>

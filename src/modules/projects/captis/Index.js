@@ -14,18 +14,17 @@ export default () => (
           </h2>
           <h4 className="pb-5 slide-in-left subtitle">BRANDING // UI-UX DESIGN</h4>
           <p className="intro py-5 slide-in-left body">
-            One of my largest undertakings to date - rebranding and building up presence
-            for Dynamo. Completely transforming not only the logo but modernizing the
-            brand identity as whole. Long term project that went through many stages,
-            iterations, and production timelines. We set out to captivate our audience
-            and invigorate our Dynamo family by showcasing spark and evoking energy.
+            Concept for a government contract proposal management system. Designed to easily bridge
+            communication between Proposal Managers and multiple color teams throughout the timeline
+            and iteration cycles. Captis is a seamless solution for companies to stay on top of incoming
+            and outgoing proposals as they vie for major contracts.
           </p>
           <Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
             <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>
           </Link>
         </div>
       </div>
-      <div className="iphone slide-in-bottom">
+      <div className="iphone">
         <img src={iphone} alt="iphone"/>
       </div>
     </div>
