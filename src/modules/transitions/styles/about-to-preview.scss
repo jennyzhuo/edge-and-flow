@@ -1,18 +1,23 @@
 @import 'animations';
 
 .about-to-preview-enter {
-  position:absolute;
+  position:relative;
   .home {
     opacity: 1;
   }
   .preview {
     opacity: 0;
-
   }
+
+  .iphone {
+    z-index: 3;
+    left: 35vw;
+  }
+
 }
 
 .about-to-preview-enter.about-to-preview-enter-active {
-  position:absolute;
+  position:relative;
   .home {
     opacity: 1
   }
@@ -25,6 +30,7 @@
 
   .iphone {
     z-index: 3;
+    left: 35vw;
   }
 }
 
