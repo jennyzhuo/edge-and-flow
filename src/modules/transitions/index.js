@@ -33,9 +33,9 @@ class Transition extends Component {
     return (
       <TransitionGroup
         childFactory={childFactoryCreator({ classNames: transition, timeout: duration })}
-        className={transitionGroupClass}
+        className={`transition-group ${transitionGroupClass}`}
       >
-        <CSSTransition key={pageKey} className={cssTransitionClass}>
+        <CSSTransition key={pageKey} className={`css-transition ${cssTransitionClass}`}>
           {/* you should wrap CSSTransition child in a div in case it could be null
       see https://github.com/reactjs/react-transition-group/issues/208 */}
           <div>

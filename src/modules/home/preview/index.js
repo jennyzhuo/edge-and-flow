@@ -11,7 +11,7 @@ export default ({ match, location }) => (
 
     <Route render={({ location }) => {
       const key = location.pathname.split("/")[3] || '/dynamo';
-      console.log("preview key = ", key);
+      // console.log("preview key = ", key);
 
       return (
           <Transitions pathKey={key} transitionGroupClass={'preview-transition-group'} cssTransitionClass={'preview-css-transition'} {...location.state}>

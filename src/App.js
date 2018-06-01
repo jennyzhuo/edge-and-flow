@@ -17,7 +17,7 @@ class App extends Component {
 
       <Router history={history}>
         <Route render={({ location }) => {
-          console.log("location = ", location);
+          // console.log("location = ", location);
           const key = location.pathname.split("/")[1] || '/';
 
           return (

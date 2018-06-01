@@ -13,11 +13,11 @@ import Transitions from '../transitions';
 
 export default ({ location, match }) => {
 
-  console.log("location = ", location);
-  console.log("match = ", match);
+  // console.log("location = ", location);
+  // console.log("match = ", match);
 
   const key = location.pathname.split("/")[2] || '/about';
-  console.log("key = ", key);
+  // console.log("key = ", key);
 
   return (
   [

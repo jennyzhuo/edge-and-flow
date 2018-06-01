@@ -4,7 +4,7 @@ import Connect from "./connect/index";
 import Intro from "./intro/index";
 import Skills from "./skills/index";
 import NavBar from "./NavBar";
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import UpdateBlocker from '../../../components/UpdateBlocker';
 import * as ROUTES from '../../../routes';
 import Transitions from '../../transitions';
@@ -14,13 +14,18 @@ export default ({ match, location }) => (
 		<div className="d-flex justify-content-center">
 			<div className="left-side home">
 				<Route render={({ location }) => {
-          const key = location.pathname.split("/")[3] || '/intro';
+          console.log("in render for about")
+					console.log("location = ", location);
+					const key = location.pathname.split("/")[3] || '/intro';
+          console.log("key = ", key);
           return (
 					<Transitions pageKey={key} transitionGroupClass={'about-transition-group'} cssTransitionClass={'about-css-transition'} {...location.state}>
-						<Route path={ROUTES.INTRO} component={Intro} />
-						<Route path={ROUTES.PERSONAL} component={Personal} />
-						<Route path={ROUTES.INTERESTS} component={Skills} />
-						<Route path={ROUTES.CONNECT} component={Connect} />
+						<Switch location={location}>
+							<Route path={ROUTES.INTRO} component={Intro} />
+							<Route path={ROUTES.PERSONAL} component={Personal} />
+							<Route path={ROUTES.INTERESTS} component={Skills} />
+							<Route path={ROUTES.CONNECT} component={Connect} />
+						</Switch>
 					</Transitions>
 				)}}/>
 				<NavBar location={location} />

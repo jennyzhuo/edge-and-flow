@@ -31,15 +31,15 @@ class ProjectMenu extends Component {
       // debugger;
 
       const { dispatch, actions } = this.props;
-      console.log('hi');
-      console.log("actions = ", actions);
+      // console.log('hi');
+      // console.log("actions = ", actions);
 
       this.props.actions.setProjectMenuOpen()
     }
 
   render () {
     const { isProjectMenuOpen } = this.props;
-    console.log("isProjectMenuOpen = ", this.props.isProjectMenuOpen);
+    // console.log("isProjectMenuOpen = ", this.props.isProjectMenuOpen);
     // let animateClass = this.state.animate ? 'slide-bottom' : '';
     // const animateClass = !this.state.isHidden ? 'slide-bottom' : '';
     const animateClass = isProjectMenuOpen ? 'slide-bottom' : '';
@@ -51,7 +51,7 @@ class ProjectMenu extends Component {
             <div className="pl-5">
               <h3 className="menu pb-3"
                 onClick={() => {
-                  console.log("clicking onclick");
+                  // console.log("clicking onclick");
                   this.showMenu()
                 }}>
                 + RECENT WORK
