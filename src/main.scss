@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import '../assets/fonts/open-sans.css';
+@import '../assets/fonts/satisfy.css';
 @import 'modules/home/styles';
 @import 'modules/projects/styles';
 @import 'modules/transitions/styles/index';
