@@ -8,25 +8,25 @@ export default () => (
     <div className="d-flex justify-content-center">
       <div className="left-side preview dynamo py-5 pl-5">
         <div className="card project p-5">
-          <h2 className="number pb-2">04</h2>
-          <h2 className="pt-4 pb-2">
+          <h2 className="number pb-2 slide-in-left title">04</h2>
+          <h2 className="pt-4 pb-2 slide-in-left title">
             EXPEDITION HACKS
           </h2>
-          <h4 className="pb-5">BRANDING // UI-UX DESIGN</h4>
-          <p className="intro py-5">
-            One of my largest undertakings to date - rebranding and building up presence
-            for Dynamo. Completely transforming not only the logo but modernizing the
-            brand identity as whole. Long term project that went through many stages,
-            iterations, and production timelines. We set out to captivate our audience
-            and invigorate our Dynamo family by showcasing spark and evoking energy.
+          <h4 className="pb-5 slide-in-left subtitle">BRANDING // UI-UX DESIGN</h4>
+          <p className="intro py-5 slide-in-left body">
+            A blockchain solution designed for the Expedition Hacks Human Trafficking Solutions Event.
+            Human trafficking is a global enterprise that is second only to drug trafficking as the 
+            most profitable criminal business. This database utilizes biometric encryption to help 
+            countries' governments and law enforcement agencies to document and quickly identify 
+            victims that have been found.
           </p>
-    			<Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
+          <Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
             <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>
-    			</Link>
+          </Link>
         </div>
-        <div className="iphone">
-          <img src={iphone} alt="iphone"/>
-        </div>
+      </div>
+      <div className="iphone">
+        <img src={iphone} alt="iphone"/>
       </div>
     </div>
   </div>

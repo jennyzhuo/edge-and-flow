@@ -1,11 +1,10 @@
 .dynamo {
-	padding-top: 75px;
 
 	.h-bar {
-			position: relative;
-			background: #D4DFE8;
-			height: 2px;
-			width: 70px;
+		position: relative;
+		background: #D4DFE8;
+		height: 2px;
+		width: 50px;
 	}
 
 	.section {
@@ -38,6 +37,12 @@
 		}
 
 		.intro {
+
+			@media all and (max-width: 1440px) { 
+				width: 30vw;
+			}
+
+
 			@media all and (max-width: 1199px) { 
 				width: 23vw;
 			}
@@ -63,18 +68,24 @@
 		}
 	}
 
-	.iphone {
-		position: absolute;
-		top: 200px;
-		left: 35vw;
+	// .iphone {
+	// 	position: absolute;
+	// 	top: 200px;
+	// 	left: 35vw;
 
-		@media all and (max-width: 1199px) { 
+	// 	@media all and (max-width: 1440px) { 
+	// 		img {
+	// 			max-height: 500px;
+	// 		}
+	// 	}
 
-			img {
-				max-height: 500px;
-			}
-		}
-	}
+	// 	@media all and (max-width: 1199px) { 
+
+	// 		img {
+	// 			max-height: 500px;
+	// 		}
+	// 	}
+	// }
 
 	.iphone-iso {
 		img {

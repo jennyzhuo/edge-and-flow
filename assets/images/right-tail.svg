@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="78px" viewBox="0 0 223 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="32.2647514%" y1="64.8645315%" x2="77.9173018%" y2="30.2818398%" id="linearGradient-1">
+            <stop stop-color="#F69191" offset="0%"></stop>
+            <stop stop-color="#FD4C4C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-initial-Copy" transform="translate(-1697.000000, -628.000000)" fill="url(#linearGradient-1)">
+            <g id="edge-and-flow" transform="translate(-5.000000, 502.000000)">
+                <polygon id="Rectangle-Copy" points="1729.5 126.684024 1952.11585 126.684024 1952.11585 203.5 1702.5 203.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,7 +5,7 @@ import * as ROUTES from '../../../routes';
 
 export default ({ location }) => {
   return (
-    <div className="menu mt-5 pt-5">
+    <div className="menu mt-4 pt-4">
       <div className="btn-group btn-group-sm" role="group">
         <Link to={{pathname: ROUTES.INTRO, state: aboutToAbout}}>
           <button type="button" className={`btn btn-secondary ${location.pathname === ROUTES.INTRO && 'active'} px-3`}>01 HOME</button>

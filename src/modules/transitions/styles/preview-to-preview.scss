@@ -1,12 +1,10 @@
 @import 'animations';
 
-.about-to-preview-enter {
+.preview-to-preview-enter {
   position:relative;
-  .home {
-    opacity: 1;
-  }
+
   .preview {
-    opacity: 0;
+    opacity: 1;
   }
 
   .iphone {
@@ -22,20 +20,16 @@
   }
 }
 
-.about-to-preview-enter.about-to-preview-enter-active {
+.preview-to-preview-enter.preview-to-preview-enter-active {
   position:relative;
-  .home {
-    opacity: 1
-  }
+
   .preview {
     z-index: 2;
     opacity: 1;
-    animation: slide-in-bottom 1000ms ease-in both;
   }
+
   .iphone {
     z-index: 3;
-    animation: slide-in-bottom 1000ms ease-in 500ms both;
-
     @media all and (max-width: 1440px) {
       left: 40vw;
     }
@@ -46,23 +40,24 @@
   }
 }
 
-.about-to-preview-exit {
+.preview-to-preview-exit {
   position:absolute;
-  .home {
-    opacity: 0;
-  }
+
   .preview {
     opacity: 1;
   }
 }
 
-.about-to-preview-exit.about-to-preview-exit-active {
+.preview-to-preview-exit.preview-to-preview-exit-active {
   position:absolute;
-  .home {
-    opacity: 1;
-  }
+
   .preview {
-    z-index: 2;
     opacity: 1;
+
+    .title {
+      animation: slide-out-top 1000ms ease-in both;
+    }
+    
+
   }
 }
