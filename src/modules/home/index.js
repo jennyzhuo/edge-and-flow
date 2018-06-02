@@ -10,13 +10,15 @@ import { withRouter } from 'react-router';
 import Preview from './preview';
 import * as ROUTES from '../../routes';
 import Transitions from '../transitions';
+import Background from "./background";
 
 export default ({ location }) => {
 
   const key = location.pathname.split("/")[2] || '/about';
 
   return (
-  [
+  [ <Background/>
+  	,
     <Route render={({ location }) => (
       <Transitions pageKey={key} transitionGroupClass={'home-transition-group'} cssTransitionClass={'home-css-transition'} {...location.state}>
         <Switch location={location}>
