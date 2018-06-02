@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { aboutToPreview } from "../transitions"
+import { aboutToPreview, previewToAbout } from "../transitions"
 import * as actions from './actions';
 import * as ROUTES from '../../routes';
 
@@ -58,7 +58,7 @@ class ProjectMenu extends Component {
                   <Link to={{ pathname: `/other`, state: aboutToPreview }}>
                     <button type="button" className={`five ${animateClass} btn`}><strong>05  </strong>OTHER</button>
                   </Link>
-                  <Link to={{ pathname: ROUTES.INTRO, state: aboutToPreview }}>
+                  <Link to={{ pathname: ROUTES.INTRO, state: previewToAbout }}>
                     <button type="button" className={`six ${animateClass} btn`}><strong>←  </strong>BACK</button>
                   </Link>
                 </div>

@@ -1,0 +1,136 @@
+@import 'animations';
+
+.case-to-preview-enter {
+  position:absolute;
+
+  .preview {
+    opacity: 1;
+
+    .card {
+      opacity: 1;
+    }
+  }
+
+  .iphone {
+    opacity: 0;
+  } 
+
+  .case {
+    opacity: 1;
+
+    .preview {
+      opacity: 1;
+    }
+  }
+
+  .projects {
+    opacity: 1;
+  }
+}
+
+.case-to-preview-enter.case-to-preview-enter-active {
+  position: absolute;
+
+  .preview {
+    opacity: 1;
+    animation: slide-in-left 1000ms ease-in 1000ms both;
+
+    .card {
+      opacity: 1;
+      animation: slide-in-left 1000ms ease-in 1000ms both;
+    }
+  }
+
+  .iphone {
+    opacity: 0;
+  }
+
+  .case {
+    opacity: 1;
+
+    .preview {
+      opacity: 1;
+    }
+  }
+
+  .projects {
+    opacity: 1;
+    animation: slide-in-right 1000ms ease-in 1000ms both;
+  }
+}
+
+.case-to-preview-exit {
+  position: absolute;
+
+  .preview {
+    opacity: 1;
+
+    .card {
+      opacity: 1;
+    }
+  }
+
+  .case {
+    opacity: 1;
+
+    .preview {
+      opacity: 1;
+    }
+
+    .iphone {
+      z-index: 3;
+      opacity: 1;
+
+      @media all and (max-width: 1440px) {
+        left: 40vw;
+      }
+
+      @media all and (max-width: 1199px) { 
+        left: 35vw;
+      }
+    }
+  }
+
+  .projects {
+    opacity: 1;
+  }
+}
+
+.case-to-preview-exit.case-to-preview-exit-active {
+  position: absolute;
+
+  .preview {
+    opacity: 1;
+  }
+
+  .case {
+    opacity: 1;
+
+    .header {
+       animation: slide-out-right 1000ms ease-in 1000ms both;
+    }
+
+    .preview {
+      opacity: 1;
+      animation: slide-out-right 1000ms ease-in 1000ms both;
+    }
+
+    .iphone {
+      z-index: 3;
+      animation: opacity 1000ms ease-in both;
+
+      @media all and (max-width: 1440px) {
+        left: 40vw;
+      }
+
+      @media all and (max-width: 1199px) { 
+        left: 35vw;
+      }
+    }
+  }
+
+  .projects {
+    opacity: 1;
+  }
+}
+

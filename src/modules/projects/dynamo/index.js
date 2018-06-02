@@ -14,9 +14,9 @@ export default () => (
           </h2>
           <h4 className="pb-5 slide-in-left subtitle">BRANDING // UI-UX DESIGN</h4>
           <p className="intro py-5 slide-in-left body">
-            One of my largest undertakings to date - rebranding and building up presence
+            Rebranding and building up a recognizable and memorable presence
             for Dynamo. Completely transforming not only the logo but modernizing the
-            brand identity as whole. Long term project that went through many stages,
+            brand identity as whole. This was a long term project that went through many stages,
             iterations, and production timelines. We set out to captivate our audience
             and invigorate our Dynamo family by showcasing spark and evoking energy.
           </p>
@@ -25,7 +25,7 @@ export default () => (
     			</Link>
         </div>
       </div>
-      <div className="iphone slide-in-bottom">
+      <div className="iphone">
         <img src={iphone} alt="iphone"/>
       </div>
     </div>

@@ -8,25 +8,24 @@ export default () => (
     <div className="d-flex justify-content-center">
       <div className="left-side preview dynamo py-5 pl-5">
         <div className="card project p-5">
-          <h2 className="number pb-2">03</h2>
-          <h2 className="pt-4 pb-2">
+          <h2 className="number pb-2 slide-in-left title">03</h2>
+          <h2 className="pt-4 pb-2 slide-in-left title">
             BURRIS
           </h2>
-          <h4 className="pb-5">BRANDING // UI-UX DESIGN</h4>
-          <p className="intro py-5">
-            One of my largest undertakings to date - rebranding and building up presence
-            for Dynamo. Completely transforming not only the logo but modernizing the
-            brand identity as whole. Long term project that went through many stages,
-            iterations, and production timelines. We set out to captivate our audience
-            and invigorate our Dynamo family by showcasing spark and evoking energy.
+          <h4 className="pb-5 slide-in-left subtitle">UI-UX DESIGN</h4>
+          <p className="intro py-5 slide-in-left body">
+            Burris Logistics is a end to end logistics company providing a vertical marketplace for
+            all stakeholders in the Supply Chain. Supply Chain Portal is designed to manage 
+            even the most complex aspects of the vendor buyer relationship, responsible for
+            moving billions of dollars a month. The success of this app hinges on a clean and intuitive UI-UX. 
           </p>
-    			<Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
+          <Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
             <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>
-    			</Link>
+          </Link>
         </div>
-        <div className="iphone">
-          <img src={iphone} alt="iphone"/>
-        </div>
+      </div>
+      <div className="iphone">
+        <img src={iphone} alt="iphone"/>
       </div>
     </div>
   </div>

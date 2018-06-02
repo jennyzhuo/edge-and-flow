@@ -1,12 +1,33 @@
 @import 'animations';
 
-.about-to-preview-enter {
+.preview-to-about-enter {
+  position:absolute;
+  .home {
+    opacity: 1;
+  }
+  .preview {
+    opacity: 1;
+  }
+}
+
+.preview-to-about-enter.preview-to-about-enter-active {
+  position:absolute;
+  .home {
+    opacity: 1;
+  }
+
+  .preview {
+    opacity: 1;
+  }
+}
+
+.preview-to-about-exit {
   position:relative;
   .home {
     opacity: 1;
   }
   .preview {
-    opacity: 0;
+    opacity: 1;
   }
 
   .iphone {
@@ -22,7 +43,7 @@
   }
 }
 
-.about-to-preview-enter.about-to-preview-enter-active {
+.preview-to-about-exit.preview-to-about-exit-active {
   position:relative;
   .home {
     opacity: 1
@@ -30,11 +51,11 @@
   .preview {
     z-index: 2;
     opacity: 1;
-    animation: slide-in-bottom 1000ms ease-in both;
+    animation: slide-out-bottom 1000ms ease-in both;
   }
   .iphone {
     z-index: 3;
-    animation: slide-in-bottom 1000ms ease-in 500ms both;
+    animation: slide-out-bottom 1000ms ease-in both;
 
     @media all and (max-width: 1440px) {
       left: 40vw;
@@ -43,26 +64,5 @@
     @media all and (max-width: 1199px) { 
       left: 35vw;
     }
-  }
-}
-
-.about-to-preview-exit {
-  position:absolute;
-  .home {
-    opacity: 0;
-  }
-  .preview {
-    opacity: 1;
-  }
-}
-
-.about-to-preview-exit.about-to-preview-exit-active {
-  position:absolute;
-  .home {
-    opacity: 1;
-  }
-  .preview {
-    z-index: 2;
-    opacity: 1;
   }
 }
