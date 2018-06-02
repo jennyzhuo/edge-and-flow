@@ -44,9 +44,12 @@
   },
   "scripts": {
     "start:dev": "webpack-dev-server",
-    "build": "webpack",
     "watch": "webpack --watch",
-    "lint": "./node_modules/.bin/eslint ./src"
+    "lint": "./node_modules/.bin/eslint ./src",
+
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist/index.bundle.js",
+    "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
   },
   "precommit": "lint",
   "author": "Santhosh Sundar",
