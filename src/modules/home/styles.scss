@@ -27,49 +27,69 @@
 }
 
 .background {
+    z-index: -1;
     position: absolute;
     height: 100vh;
     width: 100vw;
 
-    .left-streak {
+    .paint {
+      
 
-      svg {
+      .left-streak {
 
+        .splatter.left {
+          position: absolute;
+          top: 184px;
+          left: 550px;
+        }
+
+        .left-tail {
+          position: absolute;
+          content: '';
+          width: 70%;
+          height: 56.5px;
+          top: 358px;
+          left: -400px;
+          -webkit-transform: skew(-12deg);
+          -moz-transform: skew(-12deg); 
+          -o-transform: skew(-12deg); 
+          z-index: -1;
+        }
       }
 
-      .left-tail {
-        position: relative;
-        content: '';
-        width: 70%;
-        height: 76px;
-        top: 231.5px;
-        left: 25px;
-        -webkit-transform: skew(-12deg);
-        -moz-transform: skew(-12deg); 
-        -o-transform: skew(-12deg); 
-        z-index: -1;
+      .right-streak {
+
+        .right-tail {
+          position: absolute;
+          content: '';
+          width: 30%;
+          height: 57.5px;
+          top: 447.5px;
+          right: -350px;
+          -webkit-transform: skew(-12deg);
+          -moz-transform: skew(-12deg); 
+          -o-transform: skew(-12deg); 
+          z-index: -1;
+        }
+
+        .splatter.right {
+          position: absolute;
+          top: 360px;
+          right: 50px;
+        }
       }
+
+      .splatter.bottom {
+        position: absolute;
+        bottom: -10px;
+        right: 550px;
+      }
+
+
+
     }
 
-    .right-streak {
 
-      svg {
-
-      }
-
-      .right-tail {
-        position: relative;
-        content: '';
-        width: 30%;
-        height: 77.5px;
-        top: 116px;
-        right: 25px;
-        -webkit-transform: skew(-12deg);
-        -moz-transform: skew(-12deg); 
-        -o-transform: skew(-12deg); 
-        z-index: -1;
-      }
-    }
 
     
 
