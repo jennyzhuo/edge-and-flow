@@ -4,12 +4,13 @@ export default () => (
   <div className="content">
     <h1 className="slide-in-left title pb-4 mb-4">JENNY ZHUO</h1>
     <h4 className="py-3 slide-in-left subtitle">
-      UI UX DESIGN  //  GRAPHIC DESIGN  //  PAINTER  //  ILLUSTRATOR
+      UI UX DESIGN  //  VISUAL DESIGN  //  BRANDING  //  ILLUSTRATION
     </h4>
     <p className="slide-in-left body">
-      I love the thought that creativity can solve any problem, and so,
-      the creative process is always on my mind.  Making products as attractive
-      & well formed as they are effective is where I apply myself.
+
+      I believe robust UI-UX design takes both empathy and strategy. I apply myself toward 
+      designing simple interfaces and distinct user experiences. My mission for each project
+      is to build work that is not only clear and directive, but intuitive and memorable.
       I am currently looking to join a team where quality work comes
       from the cross-pollination of each other's enthusiasm.
     </p>
