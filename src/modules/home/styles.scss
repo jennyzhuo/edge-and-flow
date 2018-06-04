@@ -84,3 +84,48 @@
   }
 }
 
+.personal {
+  .portrait {
+    position: absolute;
+    bottom: -10px;
+    left: 700px;
+
+    img {
+      height: 500px;
+    }
+  }
+}
+
+.skills {
+  ul {
+    li {
+      font-size: 10px;
+    }
+  }
+}
+
+.connect {
+  img {
+    height: 13px;
+    width: auto;
+    padding-right: 12px;
+  }
+
+  .info {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

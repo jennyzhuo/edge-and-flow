@@ -5,6 +5,18 @@
 @import 'modules/projects/styles';
 @import 'modules/transitions/styles/index';
 
+.red {
+  color: #FD4C4C;
+}
+
+.blue {
+  color: #57C3CA
+}
+
+.teal {
+  color: #78FED6
+}
+
 @media all and (max-width: 1440px) { 
   .container {
     max-width: 1440px;

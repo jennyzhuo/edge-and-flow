@@ -3,8 +3,11 @@ import React from "react";
 export default () => (
   <div className="content">
     <h1 className="slide-in-left title pb-4 mb-4">JENNY ZHUO</h1>
-    <h4 className="py-3 slide-in-left subtitle">
-      UI UX DESIGN  //  VISUAL DESIGN  //  BRANDING  //  ILLUSTRATION
+    <h4 className="py-3 slide-in-left subtitle d-flex">
+      UI-UX <div className="red px-2 font-weight-bold"> // </div>    
+      VISUAL <div className="blue px-2 font-weight-bold"> // </div>
+      BRANDING <div className="teal px-2 font-weight-bold"> // </div> 
+      ILLUSTRATION
     </h4>
     <p className="slide-in-left body">
 
