@@ -65,6 +65,20 @@
 .preview-to-case-exit {
   position:absolute;
 
+  .background {
+    .left-streak {
+      opacity: 1;
+    }
+
+    .right-streak {
+      opacity: 1;
+    }
+
+    .splatter-bottom {
+      opacity: 1;
+    }
+  }
+
   .preview {
     .card {
       opacity: 1;
@@ -91,6 +105,24 @@
 
 .preview-to-case-exit.preview-to-case-exit-active {
   position:absolute;
+
+  .background {
+    .left-streak {
+      opacity: 1;
+      animation: slide-out-left 1000ms ease-in both;
+    }
+
+    .right-streak {
+      opacity: 1;
+      animation: slide-out-right 1000ms ease-in both;
+    }
+
+    .splatter-bottom {
+      opacity: 1;
+      animation: slide-out-bottom 1000ms ease-in both;
+    }
+  }
+
   .preview {
     .card {
       opacity: 1;
