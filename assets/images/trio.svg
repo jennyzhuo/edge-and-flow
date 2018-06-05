@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1308px" height="436px" viewBox="0 0 1308 436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="32.2647514%" y1="64.8645315%" x2="77.9173018%" y2="30.2818398%" id="linearGradient-1">
+            <stop stop-color="#F69191" offset="0%"></stop>
+            <stop stop-color="#FD4C4C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.1857271%" y1="25.839295%" x2="97.3639214%" y2="-9.73015891%" id="linearGradient-2">
+            <stop stop-color="#4EB3C7" offset="0%"></stop>
+            <stop stop-color="#78FFD6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="5.89474475%" x2="50%" y2="83.8888583%" id="linearGradient-3">
+            <stop stop-color="#75C2DC" offset="0%"></stop>
+            <stop stop-color="#354B67" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Expand-project-Copy" transform="translate(-306.000000, -3515.000000)" stroke="#FFFFFF" stroke-width="0.88">
+            <g id="Group-3" transform="translate(306.000000, 3515.000000)">
+                <rect id="Rectangle-2" fill="url(#linearGradient-1)" x="1.11923108" y="0.803575341" width="434.72" height="434.72"></rect>
+                <rect id="Rectangle-2-Copy" fill="url(#linearGradient-2)" x="436.719231" y="0.803575341" width="434.72" height="434.72"></rect>
+                <rect id="Rectangle-2-Copy-2" fill="url(#linearGradient-3)" x="872.160769" y="0.803575341" width="434.72" height="434.72"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

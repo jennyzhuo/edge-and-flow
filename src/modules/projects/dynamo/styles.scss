@@ -12,12 +12,25 @@
 		&.gray {
 			background: #FAFAFA;
 			margin-top: 100px;
-			padding-bottom: 100px;
+			padding-bottom: 50px;
 
 		}
 
 		&.gradient {
 			height: 60vh;
+
+
+			.cheer {
+				position: absolute;
+
+				width: 100vw;
+				height: auto;
+			}
+
+			.logotype {
+				height: 100px;
+				width: auto;
+			}
 		}
 
 		&.push {
@@ -25,6 +38,7 @@
 		}
 
 		&.trio {
+			position: relative;
 			width: calc(100vw - 400px);
 		}
 	}
@@ -95,6 +109,14 @@
 		}
 	}
 
+	.logos {
+
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+
 	.zero {
 		width: 0px !important;
 	}
@@ -104,6 +126,7 @@
 			position: relative;
 			left: 10vw;
 			top: 30vh;
+			z-index: 3;
 		}
 
 		&.case-tall {
@@ -117,6 +140,12 @@
 		height: 420px;
 		width: 420px;
 		z-index: 100;
+	}
+
+	.screens {
+		position: absolute;
+		z-index: 200;
+		left: 22vw;
 	}
 
 }

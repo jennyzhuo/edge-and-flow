@@ -1,8 +1,18 @@
 import React from "react";
 import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
-import iphone2 from "../../../../assets/images/01-case-iphone.png";
+// import iphone2 from "../../../../assets/images/01-case-iphone.png";
+import iphone2 from "../../../../assets/images/01-case-iphone-layers.png";
 import branding from "../../../../assets/images/01-case-brand.png";
+import dynamoLogo1 from "../../../../assets/images/dynamo/dynamo-logo-1.jpg";
+import dynamoLogo2 from "../../../../assets/images/dynamo/dynamo-logo-2.jpg";
+import dynamoLogo3 from "../../../../assets/images/dynamo/dynamo-logo-3.jpg";
+import dynamoLogo4 from "../../../../assets/images/dynamo/dynamo-logo-4.jpg";
+import dynamoLogo5 from "../../../../assets/images/dynamo/dynamo-logo-5.jpg";
+// import dynamoD from "../../../../assets/images/dynamo/dynamo-d.jpg";
+import dynamoCheer from "../../../../assets/images/dynamo/dynamo-cheer.jpg";
+import clients from "../../../../assets/images/dynamo/clients-screen.gif";
+import burris from "../../../../assets/images/dynamo/burris-screen.gif";
 import { Link } from 'react-router-dom';
 import { caseToPreview, previewToCase } from '../../transitions';
 
@@ -32,9 +42,9 @@ export default () => (
           </h2>
           <h4 className="pb-5 subtitle">BRANDING // UI-UX DESIGN</h4>
           <p className="intro py-5 body">
-            One of my largest undertakings to date - rebranding and building up presence
+            Rebranding and building up a recognizable and memorable presence
             for Dynamo. Completely transforming not only the logo but modernizing the
-            brand identity as whole. Long term project that went through many stages,
+            brand identity as whole. This was a long term project that went through many stages,
             iterations, and production timelines. We set out to captivate our audience
             and invigorate our Dynamo family by showcasing spark and evoking energy.
           </p>
@@ -69,25 +79,48 @@ export default () => (
         <div className="v-bar"></div>
       </div>
       <h3 className="py-5">BEYOND THE LOGO</h3>
-      <p className="px-5 mx-5">
-        One of my largest undertakings to date - rebranding and building up presence
-        for Dynamo. Completely transforming not only the logo but modernizing the brand
-        identity as whole. Long term project that went through many stages, iterations,
-        and production timelines. We set out to captivate our audience and invigorate our
-        Dynamo family by showcasing spark and evoking energy.
+      <div className="d-flex logos justify-content-center">
+        <img src={dynamoLogo1} alt="dynamo logo" className="m-3"/>
+        <img src={dynamoLogo2} alt="dynamo logo" className="m-3"/>
+        <img src={dynamoLogo3} alt="dynamo logo" className="m-3"/>
+        <img src={dynamoLogo4} alt="dynamo logo" className="m-3"/>
+        <img src={dynamoLogo5} alt="dynamo logo" className="m-3"/>
+
+
+      </div>
+      <p className="p-5 mx-5">
+        In order to delve into how best to represent Dynamo, we took a look inward 
+        and asked team members to define our culture. <br/> Bright, energetic, sincere, and 
+        concise were some the most popular adjectives. Using this inspiration we created a
+        color palette to reflect this culture.
       </p>
     </div>
 
     <div className="section gradient green-gradient d-flex">
-      <div className="card case-short p-4 align-items-start">
-        <h3 className="text-center mb-auto p-2">INSPIRING FROM WITHIN</h3>
-        <p className="text-left p-2">
-          One of my largest undertakings to date - rebranding and building up presence
-          for Dynamo. Completely transforming not only the logo but modernizing the brand
-          identity as whole. Long term project that went through many stages, iterations,
-          and production timelines. We set out to captivate our audience and invigorate our
-          Dynamo family by showcasing spark and evoking energy.
+      <img src={dynamoCheer} alt="dynamo cheer" className="cheer"/>
+      <div className="card case-short  p-4 align-items-center justify-content-center">
+        <h3 className="text-center mb-auto pb-3">INSPIRING FROM WITHIN</h3>
+        {/*<img src={dynamoD} alt="dynamo d" className="logotype py-3"/>*/}
+
+        <p className="">
+          Our excitement about this vibrant palette made it easy to build momentum as we integrated
+          the brand throughout each layer of our organization. We empowered teams to use our brand with
+          creativity and enouraged them to use the Dymamo Branding Guide as a resource.
+          The culmination of the project was the complete redesign of our corporate website.
         </p>
+
+        {/*<p className="text-center p-2">
+          "we strive to not limit ourselves <br/>or close off any opportunities"
+        </p>
+        <p className="text-center p-2">
+          "We're here for you and we want to grow <br/>with you. We want to be your go-to"
+        </p>
+        <p className="text-center p-2">
+          "Our brand is our people."
+        </p>
+        <p className="text-center p-2">
+          "Sincere and genuine type of attitude, <br/>the right culture.""
+        </p>*/}
       </div>
     </div>
 
@@ -172,15 +205,17 @@ export default () => (
         <div className="p-2 case-square blue-gradient">
         </div>
       </div>
+      <div className="zero screens d-flex">
+          <img src={clients} alt="animated" className="p-4"/>
+          <img src={burris} alt="animated" className="p-4"/>
+      </div>
       <div className="zero">
         <div className="card case-tall p-4 align-items-start">
-          <h3 className="text-center mb-auto p-2">INSPIRING FROM WITHIN</h3>
+          <h3 className="text-center mb-auto p-2">THE VISUAL PRESENCE</h3>
           <p className="text-left p-2">
-            One of my largest undertakings to date - rebranding and building up presence
-            for Dynamo. Completely transforming not only the logo but modernizing the brand
-            identity as whole. Long term project that went through many stages, iterations,
-            and production timelines. We set out to captivate our audience and invigorate our
-            Dynamo family by showcasing spark and evoking energy.
+            From the gitgo we wanted our visual presence to be strong and a reflection of
+            our teams capabilities. Particularly because it serves as the public gateway to an understanding
+            of Dynamo's spirit. Ultimately we were proud to launch the MVP and V1 - pending release.
           </p>
         </div>
       </div>
