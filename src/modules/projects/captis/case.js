@@ -4,6 +4,7 @@ import header from "../../../../assets/images/02-case-header.png";
 import screens from "../../../../assets/images/captis/02-case-banner.png";
 import calendar from "../../../../assets/images/captis/calendar.png";
 import proposals from "../../../../assets/images/captis/proposals.png";
+import trio from "../../../../assets/images/trio.svg";
 import { Link } from 'react-router-dom';
 import { caseToPreview, previewToCase } from '../../transitions';
 
@@ -83,7 +84,8 @@ export default () => (
     </div>
 
     <div className="section features d-flex flex-row justify-content-center align-items-center my-5">
-    	<div className="d-flex flex-column align-items-end p-4">
+		<img src={trio} alt="trio" className="trio align-self-center"/>
+		<div className="d-flex flex-column align-items-end p-4">
     		<img src={calendar} alt="dashboard calendar" className="calendar"/>
     		<img src={proposals} alt="dashboard proposal" className="proposals"/>
     	</div>
