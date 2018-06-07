@@ -1,7 +1,7 @@
 import React from "react";
 import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
-import iphone2 from "../../../../assets/images/01-case-iphone.png";
+import iphone2 from "../../../../assets/images/01-case-iphone-layers.png";
 import branding from "../../../../assets/images/01-case-brand.png";
 import dynamoLogo1 from "../../../../assets/images/dynamo/dynamo-logo-1.jpg";
 import dynamoLogo2 from "../../../../assets/images/dynamo/dynamo-logo-2.jpg";
@@ -9,8 +9,7 @@ import dynamoLogo3 from "../../../../assets/images/dynamo/dynamo-logo-3.jpg";
 import dynamoLogo4 from "../../../../assets/images/dynamo/dynamo-logo-4.jpg";
 import dynamoLogo5 from "../../../../assets/images/dynamo/dynamo-logo-5.jpg";
 import dynamoCheer from "../../../../assets/images/dynamo/dynamo-cheer.jpg";
-import clients from "../../../../assets/images/dynamo/clients-screen.gif";
-import burris from "../../../../assets/images/dynamo/burris-screen.gif";
+import screens from "../../../../assets/images/dynamo/screens.png";
 import { Link } from 'react-router-dom';
 import { caseToPreview, previewToCase } from '../../transitions';
 
@@ -179,19 +178,8 @@ export default () => (
     </div>
 
 
-    <div className="d-flex trio align-items-center justify-content-center">
-      <div className="d-flex">
-        <div className="p-2 case-square red-gradient">
-        </div>
-        <div className="p-2 case-square green-gradient">
-        </div>
-        <div className="p-2 case-square blue-gradient">
-        </div>
-      </div>
-      <div className="zero screens d-flex">
-          <img src={clients} alt="animated" className="p-4"/>
-          <img src={burris} alt="animated"/>
-      </div>
+    <div className="d-flex align-items-center justify-content-center">
+      <img src={screens} alt="screens" className="screens"/>
       <div className="zero">
         <div className="card case-tall p-4 align-items-start">
           <h3 className="text-center mb-auto p-2">THE VISUAL PRESENCE</h3>
