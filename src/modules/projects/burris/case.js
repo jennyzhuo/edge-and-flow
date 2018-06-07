@@ -81,40 +81,17 @@ export default () => (
       </p>
     </div>
 
-    <div className="section case-banner blue-gradient d-flex align-items-center justify-content-center">
-      <div className="d-flex flex-row">
-      	<div className="statistics d-flex flex-column">
-      		<div className="d-flex flex-row p-2">
-	      		<div className=" tile blue-gradient align-items-center justify-content-center p-4 m-4">
-	      			<h2>60</h2>
-	      			<p>VENDORS</p>
-	      		</div>
-	      		<div className=" tile blue-gradient align-items-center justify-content-center p-4 m-4">
-	      			<h2>800</h2>
-	      			<p>PURCHASE ORDERS <br/> A WEEK</p>
-	      		</div>
-	      	</div>
-	      	<div className="d-flex flex-row">
-	      		<div className=" tile blue-gradient align-items-center justify-content-center p-4 m-4">
-	      			<h2>500K</h2>
-	      			<p>CASES DELIVERED <br/> A WEEK</p>
-	      		</div>
-	      		<div className=" tile blue-gradient align-items-center justify-content-center p-4 m-4">
-	      			<h2>1B</h2>
-	      			<p>DOLLARS A YEAR</p>
-	      		</div>
-	      	</div>
-      	</div>
-      	<img src={logo} alt="burris logo"/>
+    <div className="section case-banner blue-gradient d-flex justify-content-center">
+      <div className="d-flex flex-row align-items-center ">
+      	<img src={stats} alt="burris stats" className="stats m-5"/>
+      	<img src={logo} alt="burris logo" className="logo m-5"/>
       </div>
     </div>
 
-    <div className="section features d-flex align-items-center justify-content-center">
-      <img src={trio} alt="trio" className="trio"/>
-      <img src={notifications} alt="notifications" className=""/>
-      <img src={aws} alt="aws" className=""/>
-    </div>
-    <div className="card case-short p-5 align-items-center justify-content-center">
+    <div className="section push features d-flex flex-column justify-content-center">
+      <img src={trio} alt="trio" className="trio align-self-center"/>
+      <img src={notifications} alt="notifications" className="notifications"/>
+      <div className="card case-short p-5 align-items-center justify-content-center align-self-center">
         <h3 className="text-center pb-3">THE PIPELINE</h3>
 
         <p className="">
@@ -125,5 +102,7 @@ export default () => (
         </p>
 
   	</div>
+      <img src={aws} alt="aws" className="aws align-self-end"/>
+    </div>
   </div>
 );
