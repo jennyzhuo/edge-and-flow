@@ -78,7 +78,7 @@ export default () => (
       </p>
     </div>
 
-    <div className="section gradient green-gradient d-flex">
+    <div className="section green-gradient d-flex">
       <img src={screens} alt="captis screens" className="case-banner"/>
     </div>
 

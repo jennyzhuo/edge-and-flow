@@ -1,0 +1,30 @@
+.burris {
+	.section {
+		.tile {
+			height: 150px;
+			width: 150px;
+			border-radius: 10px !important;
+			color: #fff !important;
+			text-align: center !important;
+
+			h3 {
+				color: #fff !important;
+			}
+
+			p {
+				color: #fff !important;
+				font-size: 8px;
+			}
+
+		}
+
+		.features {
+			position: relative;
+		}
+	}
+
+	.case-banner {
+		position: relative;
+		height: 100%;
+	}
+}
