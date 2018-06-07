@@ -6,6 +6,7 @@ import aws from "../../../../assets/images/burris/aws.png";
 import notifications from "../../../../assets/images/burris/notifications.png";
 import logo from "../../../../assets/images/burris/logo.svg";
 import trio from "../../../../assets/images/trio.svg";
+import screens from "../../../../assets/images/burris/03-case-banner.png";
 import { Link } from 'react-router-dom';
 import { caseToPreview, previewToCase } from '../../transitions';
 
@@ -81,28 +82,32 @@ export default () => (
       </p>
     </div>
 
-    <div className="section case-banner blue-gradient d-flex justify-content-center">
+    <div className="section blue-gradient d-flex justify-content-center">
       <div className="d-flex flex-row align-items-center ">
       	<img src={stats} alt="burris stats" className="stats m-5"/>
       	<img src={logo} alt="burris logo" className="logo m-5"/>
       </div>
     </div>
 
-    <div className="section push features d-flex flex-column justify-content-center">
+    <div className="section features d-flex flex-column justify-content-center my-5">
       <img src={trio} alt="trio" className="trio align-self-center"/>
       <img src={notifications} alt="notifications" className="notifications"/>
       <div className="card case-short p-5 align-items-center justify-content-center align-self-center">
-        <h3 className="text-center pb-3">THE PIPELINE</h3>
+        <h3 className="text-center pb-3">THE BIG FEATURES</h3>
 
         <p className="">
-          The success of company's proposal winning pipeline depends on the ability of that team 
-          to quickly discover eligible contracts, form color teams, and execute on a timeline. The Captis
-          dashboard was designed to provide high level organization, reflecting any timeline tightness or
-          compliance issues that require attention.
+          Easily track Purchase Order scheduling, editing, monitoring, and follow-up. <br/>
+          Create large quantity orders and project inventory, all protected by 
+          specialized profiles and groups with customizable user permissions.
         </p>
 
-  	</div>
+  	  </div>
       <img src={aws} alt="aws" className="aws align-self-end"/>
     </div>
+
+    <div className="section blue-gradient d-flex">
+      <img src={screens} alt="burris screens" className="case-banner"/>
+    </div>
+
   </div>
 );
