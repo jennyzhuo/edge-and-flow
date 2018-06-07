@@ -1,5 +1,5 @@
 import React from "react";
-import iphone from "../../../../assets/images/01-intro-iphone.png";
+import iphone from "../../../../assets/images/04-intro-iphone.png";
 import { Link } from 'react-router-dom';
 import { previewToCase } from '../../transitions';
 
@@ -19,8 +19,11 @@ export default () => (
             most profitable criminal business. This database utilizes biometric encryption to help 
             countries' governments and law enforcement agencies to document and quickly identify 
             victims that have been found.
+            <br/>
+
+            Mobile mockups created by Geoff Nelowet
           </p>
-          <Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
+          <Link to={{ pathname: '/case/hackathon', state: previewToCase }}>
             <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>
           </Link>
         </div>

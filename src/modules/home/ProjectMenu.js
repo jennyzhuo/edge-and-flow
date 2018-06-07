@@ -1,3 +1,7 @@
+// <Link to={{ pathname: `/other`, state: aboutToPreview }}>
+//   <button type="button" className={`five ${animateClass} btn`}><strong>05  </strong>OTHER</button>
+// </Link>
+
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
@@ -55,9 +59,7 @@ class ProjectMenu extends Component {
                   <Link to={{ pathname: ROUTES.HACKATHON_PREVIEW, state: aboutToPreview }}>
                     <button type="button" className={`four ${animateClass} btn`}><strong>04  </strong>HACKATHON</button>
                   </Link>
-                  <Link to={{ pathname: `/other`, state: aboutToPreview }}>
-                    <button type="button" className={`five ${animateClass} btn`}><strong>05  </strong>OTHER</button>
-                  </Link>
+                  
                   <Link to={{ pathname: ROUTES.INTRO, state: previewToAbout }}>
                     <button type="button" className={`six ${animateClass} btn`}><strong>←  </strong>BACK</button>
                   </Link>

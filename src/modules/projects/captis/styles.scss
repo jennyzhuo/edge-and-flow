@@ -1,0 +1,35 @@
+.captis {
+	.section {
+		&.gray {
+			background: #FAFAFA;
+			margin-top: 100px;
+			padding-bottom: 50px;
+
+		}
+
+		.calendar {
+			height: 200px;
+			width: auto;
+		}
+
+		.proposals {
+			height: auto;
+			width: 500px;
+		}
+
+		.features {
+			position: relative;
+		}
+	}
+
+	.case-banner {
+		position: relative;
+		height: 100%;
+	}
+
+	.trio {
+		position: absolute;
+		z-index: -1;
+	}
+
+}

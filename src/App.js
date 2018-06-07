@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Home from "./modules/home/index";
 import DynamoCase from "./modules/projects/dynamo/case";
+import CaptisCase from "./modules/projects/captis/case";
+import BurrisCase from "./modules/projects/burris/case";
+import HackathonCase from "./modules/projects/hackathon/case";
 import { Router, Switch, Route, Redirect } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 import Transitions from './modules/transitions'
@@ -22,7 +25,10 @@ class App extends Component {
               <div className="d-flex justify-content-center app">
                 <Switch location={location}>
                   <Route path={ROUTES.HOME} component={Home} />
-                  <Route path='/case/dynamo' component={DynamoCase} />
+                  <Route path={ROUTES.DYNAMO_CASE} component={DynamoCase} />
+                  <Route path={ROUTES.CAPTIS_CASE} component={CaptisCase} />
+                  <Route path={ROUTES.BURRIS_CASE} component={BurrisCase} />
+                  <Route path={ROUTES.HACKATHON_CASE} component={HackathonCase} />
                   <Redirect from='/' to={ROUTES.INTRO} />
                 </Switch>
               </div>

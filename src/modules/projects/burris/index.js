@@ -1,5 +1,5 @@
 import React from "react";
-import iphone from "../../../../assets/images/01-intro-iphone.png";
+import iphone from "../../../../assets/images/03-intro-iphone.png";
 import { Link } from 'react-router-dom';
 import { previewToCase } from '../../transitions';
 
@@ -17,9 +17,9 @@ export default () => (
             Burris Logistics is a end to end logistics company providing a vertical marketplace for
             all stakeholders in the Supply Chain. Supply Chain Portal is designed to manage 
             even the most complex aspects of the vendor buyer relationship, responsible for
-            moving billions of dollars a month. The success of this app hinges on a clean and intuitive UI-UX. 
+            moving billions of dollars a year. The success of this app hinges on a clean and intuitive UI-UX. 
           </p>
-          <Link to={{ pathname: '/case/dynamo', state: previewToCase }}>
+          <Link to={{ pathname: '/case/burris', state: previewToCase }}>
             <button type="button" className="btn btn-secondary px-3 ">THERE'S MORE</button>
           </Link>
         </div>

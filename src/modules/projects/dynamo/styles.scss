@@ -1,12 +1,5 @@
 .dynamo {
 
-	.h-bar {
-		position: relative;
-		background: #D4DFE8;
-		height: 2px;
-		width: 50px;
-	}
-
 	.section {
 
 		&.gray {
@@ -19,66 +12,10 @@
 		&.gradient {
 			height: 60vh;
 
-
-			.cheer {
-				position: absolute;
-
-				width: 100vw;
-				height: auto;
-			}
-
 			.logotype {
 				height: 100px;
 				width: auto;
 			}
-		}
-
-		&.push {
-			margin-top: 30vh;
-		}
-
-		&.trio {
-			position: relative;
-			width: calc(100vw - 400px);
-		}
-	}
-
-	&.preview {
-
-		.number {
-			width: 60px;
-			border-bottom: 2px solid #FD4C4C;
-		}
-
-		.intro {
-
-			@media all and (max-width: 1440px) { 
-				width: 30vw;
-			}
-
-
-			@media all and (max-width: 1199px) { 
-				width: 23vw;
-			}
-		}
-
-		.btn {
-			width: 150px;
-			border-color: #FD4C4C;
-			background-color: #FD4C4C;
-			color: #fff;
-		}
-
-		.v-bar {
-			background: #FD4C4C;
-			height: 40px;
-			width: 2px;
-		}
-	}
-
-	.header {
-		img {
-			max-width: 58vw;
 		}
 	}
 
@@ -96,29 +33,12 @@
 		}
 	}
 
-	.scroll {
-		position: relative;
-		top: -35px;
-
-		.v-bar {
-			position: relative;
-			left: 50%;
-			background: #D4DFE8;
-			height: 70px;
-			width: 2px;
-		}
-	}
-
 	.logos {
 
 		img {
 			height: 50px;
 			width: auto;
 		}
-	}
-
-	.zero {
-		width: 0px !important;
 	}
 
 	.card {
@@ -143,9 +63,6 @@
 	}
 
 	.screens {
-		position: absolute;
 		z-index: 200;
-		left: 22vw;
 	}
-
 }
