@@ -1,15 +1,13 @@
 import React from "react";
 import iphone from "../../../../assets/images/01-intro-iphone.png";
 import header from "../../../../assets/images/01-case-header.png";
-// import iphone2 from "../../../../assets/images/01-case-iphone.png";
-import iphone2 from "../../../../assets/images/01-case-iphone-layers.png";
+import iphone2 from "../../../../assets/images/01-case-iphone.png";
 import branding from "../../../../assets/images/01-case-brand.png";
 import dynamoLogo1 from "../../../../assets/images/dynamo/dynamo-logo-1.jpg";
 import dynamoLogo2 from "../../../../assets/images/dynamo/dynamo-logo-2.jpg";
 import dynamoLogo3 from "../../../../assets/images/dynamo/dynamo-logo-3.jpg";
 import dynamoLogo4 from "../../../../assets/images/dynamo/dynamo-logo-4.jpg";
 import dynamoLogo5 from "../../../../assets/images/dynamo/dynamo-logo-5.jpg";
-// import dynamoD from "../../../../assets/images/dynamo/dynamo-d.jpg";
 import dynamoCheer from "../../../../assets/images/dynamo/dynamo-cheer.jpg";
 import clients from "../../../../assets/images/dynamo/clients-screen.gif";
 import burris from "../../../../assets/images/dynamo/burris-screen.gif";
@@ -97,35 +95,20 @@ export default () => (
     </div>
 
     <div className="section gradient green-gradient d-flex">
-      <img src={dynamoCheer} alt="dynamo cheer" className="cheer"/>
+      <img src={dynamoCheer} alt="dynamo cheer" className="case-banner"/>
       <div className="card case-short  p-4 align-items-center justify-content-center">
         <h3 className="text-center mb-auto pb-3">INSPIRING FROM WITHIN</h3>
-        {/*<img src={dynamoD} alt="dynamo d" className="logotype py-3"/>*/}
-
         <p className="">
           Our excitement about this vibrant palette made it easy to build momentum as we integrated
           the brand throughout each layer of our organization. We empowered teams to use our brand with
           creativity and enouraged them to use the Dymamo Branding Guide as a resource.
           The culmination of the project was the complete redesign of our corporate website.
         </p>
-
-        {/*<p className="text-center p-2">
-          "we strive to not limit ourselves <br/>or close off any opportunities"
-        </p>
-        <p className="text-center p-2">
-          "We're here for you and we want to grow <br/>with you. We want to be your go-to"
-        </p>
-        <p className="text-center p-2">
-          "Our brand is our people."
-        </p>
-        <p className="text-center p-2">
-          "Sincere and genuine type of attitude, <br/>the right culture.""
-        </p>*/}
       </div>
     </div>
 
     <div className="section push d-flex flex-row justify-content-center">
-      <div className="d-flex flex-row p-5 justinfy-content-between">
+      <div className="d-flex flex-row p-5 justify-content-between">
         <div>
           <ul className="p-3">
             <li>
@@ -207,7 +190,7 @@ export default () => (
       </div>
       <div className="zero screens d-flex">
           <img src={clients} alt="animated" className="p-4"/>
-          <img src={burris} alt="animated" className="p-4"/>
+          <img src={burris} alt="animated"/>
       </div>
       <div className="zero">
         <div className="card case-tall p-4 align-items-start">
