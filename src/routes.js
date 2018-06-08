@@ -16,3 +16,4 @@ export const CASE = '/case';
 export const DYNAMO_CASE = `${CASE}/dynamo`;
 export const CAPTIS_CASE = `${CASE}/captis`;
 export const BURRIS_CASE = `${CASE}/burris`;
+export const HACKATHON_CASE = `${CASE}/hackathon`;

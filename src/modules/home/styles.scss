@@ -1,3 +1,19 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1440px) { @content; }
+}
+
 .home {
 
   height: 60vh;
@@ -16,7 +32,6 @@
       color: #4d4d5d;
     }
 
-
     .btn-secondary:focus {
       border-color: #FD4C4C;
       background-color: #FD4C4C;
@@ -33,54 +48,53 @@
   width: 100vw;
   overflow: hidden;
 
-  .left-streak {
-
-    .splatter-left {
-      position: absolute;
-      top: 184px;
-      left: 550px;
-    }
-
-    .left-tail {
-      position: absolute;
-      content: '';
-      width: 70%;
-      height: 56.5px;
-      top: 358px;
-      left: -400px;
-      -webkit-transform: skew(-12deg);
-      -moz-transform: skew(-12deg); 
-      -o-transform: skew(-12deg); 
-      z-index: -1;
-    }
-  }
-
-  .right-streak {
-
-    .right-tail {
-      position: absolute;
-      content: '';
-      width: 30%;
-      height: 57.5px;
-      top: 447.5px;
-      right: -350px;
-      -webkit-transform: skew(-12deg);
-      -moz-transform: skew(-12deg); 
-      -o-transform: skew(-12deg); 
-      z-index: -1;
-    }
-
-    .splatter-right {
-      position: absolute;
-      top: 360px;
-      right: 50px;
-    }
-  }
-
-  .splatter-bottom {
+  .backdrop {
     position: absolute;
-    bottom: -10px;
-    right: 550px;
+  }
+}
+
+@include for-phone-only {
+
+  .backdrop {
+    display: none;
+  }
+}
+
+@include for-tablet-portrait-up {
+
+  .backdrop {
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+}
+
+@include for-tablet-landscape-up {
+
+  .backdrop {
+    height: 625px;
+    width: auto;
+    bottom: 0px;
+    left: -40px;
+  }
+}
+
+@include for-desktop-up {
+
+  .backdrop {
+    height: 750px;
+    width: auto;
+    bottom: -140px;
+    left: -70px;
+  }
+}
+
+@include for-big-desktop-up {
+
+  .backdrop {
+    height: 888px;
+    width: auto;
+    bottom: -170px;
+    left: -100px;
   }
 }
 
